@@ -5,7 +5,7 @@ define u = Character("???", color="#FFFFFF", who_outlines=[(2, "#000", 0, 0)])
 
 $ end_txt = ""
 
-# The game starts here.
+# The game starts here!
 
 label start:
 

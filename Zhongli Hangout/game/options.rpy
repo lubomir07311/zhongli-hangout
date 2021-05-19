@@ -145,7 +145,7 @@ default preferences.afm_time = 15
 define config.save_directory = "ZhongliHangout-1621436591"
 
 
-## Icon ########################################################################
+## Icons #######################################################################
 ##
 ## The icon displayed on the taskbar or dock.
 
