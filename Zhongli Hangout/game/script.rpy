@@ -2,6 +2,9 @@ define t = Character("Traveler", color="#FFD700", who_outlines=[(2, "#000", 0, 0
 define p = Character("Paimon", color="#AFEEEE", who_outlines=[(2, "#000", 0, 0)])
 define x = Character("Xiuhua", color="#FFFFFF", who_outlines=[(2, "#000", 0, 0)])
 define u = Character("???", color="#FFFFFF", who_outlines=[(2, "#000", 0, 0)])
+define m = Character("Chef Mao", color="#FFD700", who_outlines=[(2, "#000", 0, 0)])
+
+define flashbulb = Fade(0.2, 0.0, 0.8, color ='dfd')
 
 $ end_txt = ""
 
@@ -64,7 +67,8 @@ label choices_out:
     p "It just does ... hehe... Now about that breakfast..."
     $ end_txt = "Paimon and the Traveler head to the Wanmin Restaurant..."
     call end_screen(end_txt) from _call_end_screen_1
-    return
+    $ had_breakfast = False
+    jump wanmin_scene_one
 
 label downstairs:
     scene bg downstairs with fade
@@ -125,9 +129,87 @@ label downstairs:
     p "Mmmm...This smells so tasty."
     t "Dig in Paimon. Before it gets too cold. Once we are finished here we'll head to the Adventurer's Guild and check out those commissions."
     p "Mhm... Shoundsh gud... *gulp*"
-
+    $ had_breakfast = True
     $ end_txt = "Paimon and Traveler head to the Adventurer's Guild after breakfast..."
     call end_screen(end_txt) from _call_end_screen_2
+    jump wanmin_scene_one
+
+label wanmin_scene_one:
+    scene bg wanmin
+    show paimon happy at left
+    p "Hey look, it's the Wanmin restaurant."
+    t "Wow, there certainly are a lot of people around it. And a lot of millelith. I wonder what's going on."
+    p "It seems like the restaurant is closed."
+
+    if had_breakfast:
+            t "Good thing we had breakfast at the Baiju Guesthouse before heading out."
+    else:
+            p "Oh no, this means no Boiled fish. Now Paimon is hangry."
+
+    t "I think I can spot Chef Mao in the crowd. Do you think we should..."
+    p "Chef Mao! Hey... over here! "
+    t "Paimon! Can't you see he is busy? Why would you disturb him right now?"
+    p "Well, Paimon thought we can ask why the restaurant is closed. Something serious must have happened in order to stop the business in Liyue."
+    t "I guess you're right. And I think you got his attention. He is coming our way."
+    show mao happy at right with dissolve
+    m "Paimon, traveler, it's good to see you again. "
+    p "Hey, Chef Mao. We were on our way here and couldn't help but notice that the restaurant is closed today. Is everything okay?"
+    m "Unfortunately, nothing is okay. I came to the restaurant at dawn to prepare for what I thought was going to be a busy day. "
+    m "But instead I found the front wooden shutter smashed. Someone threw some rocks at it and was able to break it. "
+    m "Not only that but when the rocks landed inside, they broke some of our storage containers and now there's food all over the kitchen floor."
+    m "And if that was not enough, one of the larger boulders damaged the stove. It is inoperable. How am I supposed to cook for my customers without a stove?"
+    t "Oh no... that's terrible. Who would want to trash your restaurant? "
+    m "I've been nothing but nice to every customer I've had. I pay my taxes when they are due and I always try to satisfy my clients' taste buds...however strange they are. I don't know who would hold a grudge over us."
+    m "My daughter Xiangling has been nothing but nice as well. Even on her gastronomy trip to Mondstadt, she made a lot of friends. Including you two."
+    m "You were with her during the cook-off show, right? Did she upset anyone?"
+    t "Well, Brook, the chef from Springvale was a bit upset over the loss of the cook-off but ultimately she was happy to exchange recipes and cooking tips with Xiangling. "
+    t "Even to this day, there is this girl in Springvale, Siegfria, who would put up commissions with the Adventurer's Guild for Jade Parcels. Everyone seemed happy with Xiangling's visit to Mondstadt."
+    p "Mmm... Delicious Jade Parcels..."
+    m "Then I don't know. I've told the millelith the same thing. I haven't heard complaints on the premises of the restaurant. We are an honest business with no outstanding debt or taxes due."
+    p "This doesn't sound right. There must be a logical explanation to why someone would trash the Wanmin Restaurant...but what?"
+    m "I was going to put up a commission with the Adventurer's Guild across the street to further investigate this issue but since you are here, would you like to take on the job?"
+    menu:
+        m "{cps=0}I was going to put up a commission with the Adventurer's Guild across the street to further investigate this issue but since you are here, would you like to take on the job?"
+
+        "We would be happy to!":
+            t "Well we haven't been assigned anything from the guild today. I think we can take on this case. What do you think Paimon?"
+
+        "You can count on us!":
+            t "Well we haven't been assigned anything from the guild today. I think we can take on this case. What do you think Paimon?"
+
+    p "Yup! You can count on us. Anything to get your signature Boiled Fish back on the Liyue menu."
+    m "Thank you so much! I would compensate you greatly for you trouble. And you can come by for a free meal after we are back in business."
+    p "Free meal?! Oh, Chef Mao, you really know how to get Paimon going. Let's crack the case wide open then, shall we, Traveler?"
+    t "Okay, but where do we start? "
+    p "The crime scene..duuh... We need to inspect those rocks."
+    t "Good thinking, Paimon. But I'm not much of a rock expert. Are you?"
+    p "Well, not really. But do you have any better idea where to start?"
+    t "*sigh* I guess not. Come on, let's have a closer look at the rocks."
+    m "Sure, follow me. And excuse the mess. I've been too busy talking to the millelith and disappointing customers to clean up."
+    p "Don't worry about it. We are just going to have a look at the rocks."
+    scene bg wanmin trashed with dissolve
+    show paimon happy at left with dissolve
+    p "Woah... Look at the size of those boulders. Paimon bets we are looking for someone big and strong."
+    t "Or..."
+    p "Or a group of vandals who could lift them up together."
+    t "Or..."
+    p "Or one of those geovishaps that dig holes in the ground and spin like a crazy hedgehog."
+    t "Or...someone who could manipulate the rocks without even lifting a finger."
+    p "Ooh.. Yeah. That's a good point as well. Are you saying that someone \"special\" might be responsible."
+    t "I can't be sure. But there rocks do not look familiar to me."
+    p "Hey, this one kinda looks like a broken crab hehe...."
+    t "Paimon! Will you focus here. It's not a good time to joke around. We took on this commission to help Chef Mao get back in business and catch the criminals responsible."
+    p "Sorry, you're right. This is a serious job. "
+    p "So you are saying that this might be the work of not your ordinary everyday criminal but someone more powerful."
+    t "I suspect so. And this does narrow down the list of suspects quite a lot. "
+    p "Are we going to go and interrogate each one individually?"
+    t "Don't be silly. That would take up too much of our time. I suggest we visit an expert first. He will be able to point us in the right direction."
+    p "Are you saying what Paimon thinks you're saying?"
+    t "Yes, Paimon. It's time to pay our old friend a visit."
+    p "Yay, Paimon is always excited to see him. To the Wangsheng Funeral Parlor?"
+    t "To the Wangsheng Funeral Parlor!"
+    $ end_txt = "Paimon and the Traveler head to the Wangsheng Funeral Parlor"
+    call end_screen(end_txt)
     return
 
 label end_screen(end_txt):
@@ -137,7 +219,7 @@ label end_screen(end_txt):
     scene bg black with Fade(0.5, 0, 0)
     show text "{size=44} [end_txt]" at truecenter
     with dissolve
-    pause 4
+    pause 3
     hide text
     with dissolve
     return
