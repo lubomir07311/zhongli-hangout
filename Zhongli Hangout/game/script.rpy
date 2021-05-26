@@ -210,7 +210,7 @@ label wanmin_scene_one:
     t "To the Wangsheng Funeral Parlor!"
     $ end_txt = "Paimon and the Traveler head to the Wangsheng Funeral Parlor"
     call end_screen(end_txt)
-    return
+    jump parlor
 
 label end_screen(end_txt):
 
