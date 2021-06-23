@@ -59,7 +59,7 @@ label mondstadt_trip_talk:
     p "Fairly spicy and currently unavailable. Paimon is sad and hungry..."
     t "She had the food and complained a little bit but after all was said and done, there were no hard feelings left. We went back to Mondstadt on our merry way to continue with the preparation for the exam."
     z "I see. And this girl you say wouldn't hurt anybody?"
-    t "Typically, no. She is well known in Mondstadt to be a protector of the weaker. Everybody has good relations with her. But last time I left her, I got worries she might have overworked herself."
+    t "Typically, no. She is well known in Mondstadt to be a protector of the weaker. Everybody has good relations with her. But last time we saw her, I was worried she might have overworked herself."
     p "Who knows what goes inside that pretty little head of hers. What if something has finally snapped and she came back to Liyue to destroy the man who burned her delicate tongue?"
     t "Um... highly unlikely... but I don't have any better suggestions. Anyone else?"
     p "Too late. She has been added to Paimon's list. Time for a trip to Mondstadt. Zhongli, will you be accompanying us?"
@@ -69,5 +69,4 @@ label mondstadt_trip_talk:
     $ end_txt = "The party takes a trip to the city of Mondstadt..."
     call end_screen(end_txt)
 
-    scene bg wanmin trace with fade
-    t "we made it"
+    jump mondstadt_square

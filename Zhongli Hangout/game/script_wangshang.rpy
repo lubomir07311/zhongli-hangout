@@ -79,9 +79,41 @@ label parlor:
             jump choices_ningguang
 
         "Mondstadt folk":
-            t "Lol Mondstadt folk"
+            t "I know a few Geo Vision bearers in Mondstadt. Is it worth talking to them about the situation?"
+            z "Are the people of Mondstadt capable of doing such an act?"
+            t "Well...no, not really. Do you have any better suggestions though?"
+            z "Unfortunately, I don't. Paimon?"
+            p "Paimon is adding a couple of names to the suspect list now that the Traveler mentioned Mondstadt. We should go and talk to them at once!"
+            t "I guess Paimon is onboard with the plan. Zhongli, would you be able to take some time off to join us on the trip?"
+            z "I suppose I could. I'll just tell the boss that I'm going on a business trip to promote the Wangshang Funeral Parlor's services to the people of Mondstadt."
+            t "Isn't she going to want to come and supervise you?"
+            z "She would trust me with it. I haven't let her down before. Besides, she is going to be busy running the new promotion for the people of Liyue."
+            p "Traveler!!! While writing down the names of the suspects, something bad came to Paimon's mind."
+            t "What is it, Paimon?"
+            p "Well, remember our last visit to the Wanmin Restaurant?"
+            t "Yes. It was a few weeks ago with...."
+            t "... I see what you mean. But do you {i}really mean{/i} it? Is she capable of doing that?"
+            p "She definitely has the strength and the mastery over her vision to be able to do something like that."
+            t "I suppose you got that part right."
+            z "Could somebody please fill me in. I think I'm lost."
+            t "See there is this girl in Mondstadt. She is the sweetest maid and would never hurt anybody."
+            z "Maid? Is that the girl from The Knight-Maid's Tale that Iron Tongue Tian has been telling recently?"
+            p "Yup. Same maid. However, Tian may have exaggerated the story a little. And by a little, Paimon means a lot."
+            t "Stories aside, I was helping her prepare for her knightly exam, and we decided to take a trip to Liyue. I took her to the Wanmin restaurant and she did have authentic cuisine, which as we all know is fairly spicy."
+            p "Fairly spicy and currently unavailable. Paimon is sad and hungry..."
+            t "She had the food and complained a little bit but after all was said and done, there were no hard feelings left. We went back to Mondstadt on our merry way to continue with the preparation for the exam."
+            z "I see. And this girl you say wouldn't hurt anybody?"
+            t "Typically, no. She is well known in Mondstadt to be a protector of the weaker. Everybody has good relations with her. But last time we saw her, I was worried she might have overworked herself."
+            p "Who knows what goes inside that pretty little head of hers. What if something has finally snapped and she came back to Liyue to destroy the man who burned her delicate tongue?"
+            t "Um... highly unlikely... but I don't have any better suggestions. Anyone else?"
+            p "Too late. She has been added to Paimon's list. Time for a trip to Mondstadt."
+            z "An opportunity to taste an authentic dandelion wine once more. While at it, I might catch up with an old friend I haven't seen in a while."
+            t "It is settled then. Let's pack our things and get going."
 
-    t "Here we are again"
+            $ end_txt = "The party takes a trip to the city of Mondstadt..."
+            call end_screen(end_txt)
+
+            jump mondstadt_square
 
 label choices_ningguang:
 
