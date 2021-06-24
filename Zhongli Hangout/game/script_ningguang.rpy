@@ -67,6 +67,7 @@ label mondstadt_trip_talk:
     t "It is settled then. Let's pack our things and get going."
 
     $ end_txt = "The party takes a trip to the city of Mondstadt..."
+
     call end_screen(end_txt)
 
     jump mondstadt_square
