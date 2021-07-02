@@ -218,8 +218,7 @@ label choices_mondstadt_night:
             $ end_txt = "The party rents a transport balloon and makes it back to Liyue before the storm"
 
             call end_screen(end_txt)
-
-    z "The End for Now!"
+            jump in_front_of_guesthouse
 
 label choices_mondstadt_drinks:
     menu:
@@ -232,8 +231,9 @@ label choices_mondstadt_drinks:
             z "Oh my... I didn't pin you down as a party animal, Traveler."
             t "Heh... I'm not, but I do like spending time in a good company."
             z "It is settled then. Lead the way!"
-            $ end_txt = "The party enjoys a night of cocktails at the Cat's Tail"
+            $ end_txt = "The party enjoys a night of cocktails at the Cat's Tail..."
             call end_screen(end_txt)
+            jump mondstadt_day_after
 
         "Angel's Share":
             t "Let's give Zhongli what he came for. It is not common for him to leave Liyue these days. Might as well enjoy the trip to Mondstadt to the fullest."
@@ -247,5 +247,32 @@ label choices_mondstadt_drinks:
             p "Is that a challenge I hear?"
             z "No, not a challenge but a fact!"
             p "We'll see, Zhongli. Let's go find a table before it's too late."
-            $ end_txt = "The party enjoys a nice dinner at the Angel's Share"
+            $ end_txt = "The party enjoys a nice dinner at the Angel's Share..."
             call end_screen(end_txt)
+            jump mondstadt_day_after
+
+label mondstadt_day_after:
+    scene bg ms_sq_2
+    show paimon happy at center with dissolve
+    p "Brrr, it is pretty cold outside today."
+    t "Yes, indeed. Did you see how much rain poured down last night?"
+    p "Mhm~ it saw scary...and all the thunder and lightning. Paimon barely caught sleep."
+    t "Imagine if we had traveled to Liyue last night. We might have not made it to Liyue in time."
+    p "Paimon doesn't like being wet! So Paimon is very thankful that you chose to stay the night in Mondstadt."
+    t "It was a good choice. And Zhongli thoroughly enjoyed himself here."
+    p "Speaking of..."
+    show zh happy at left with dissolve
+    z "Good morning! How was your sleep last night?"
+    p "Morning! We've had better. The storm was terrifying."
+    z "That's precisely what I was thinking. Thank you for convincing me to stay in Mondstadt for the night. A night of leisure was long overdue."
+    t "I'm glad you enjoyed yourself, Zhongli. But we need to get back to work now."
+    z "You're absolutely right. The sky looks clearer now. We can make it to Liyue on foot without any issues."
+    p "Hehe~ {i}on foot{/i}...."
+    t "Yeah... Paimon is just going to be floating around. It wouldn't make much difference."
+    p "Heeey! Floating is exhausting as well, I'll have you know! You try and float whole day without a break and see how you like it."
+    t "It would be my pleasure...if I could that is. The best I can do is use my Wind Glider to stay afloat."
+    z "Aaahh.. friendly bickering... never gets old. And I have to spend the whole trip back listening to this."
+    p "Yes, right, the trip. Let's get going!"
+    $ end_txt = "The party takes a trip back to Liyue Harbor..."
+    call end_screen(end_txt)
+    jump day_after_liyue
