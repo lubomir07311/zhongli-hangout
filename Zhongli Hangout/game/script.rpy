@@ -3,10 +3,12 @@ define p = Character("Paimon", color="#AFEEEE", who_outlines=[(2, "#000", 0, 0)]
 define x = Character("Xiuhua", color="#FFFFFF", who_outlines=[(2, "#000", 0, 0)])
 define u = Character("???", color="#FFFFFF", who_outlines=[(2, "#000", 0, 0)])
 define m = Character("Chef Mao", color="#FFD700", who_outlines=[(2, "#000", 0, 0)])
+define l = Character("Lan", color="#FFD700", who_outlines=[(2, "#000", 0, 0)])
 
 define flashbulb = Fade(0.2, 0.0, 0.8, color ='dfd')
 
-$ end_txt = ""
+define end_txt = ""
+define stayed_in_mondstadt = True
 
 # The game starts here!
 
@@ -58,10 +60,10 @@ label choices_in:
 label choices_out:
     t "Would you like to go out for food, instead of eating downstairs?"
     p "This sounds lovely. Paimon has almost forgotten the taste of Wanmin Restaurant's Boiled Fish. Can we go to Wanmin Restaurant, Traveler? Please please please?"
-    t "Well the Wanmin Restaurant is on the way to the Adventurer's Guild. Which is where we should head after breakfast anyway."
+    t "Well the Wanmin Restaurant is on the way to the Adventurers' Guild. Which is where we should head after breakfast anyway."
     t "I guess we are taking down two birds with one stone. But I think that the Boiled Fish might be a bit too heavy for breakfast. I might stick to some good old Mora Meat. "
     p "Nothing is too heavy when Paimon is having it. Hecc, Paimon might get a side of Mora Meat to go with that Boiled Fish as well haha."
-    t "Oh Paimon, you never cease amaze me. Would you be able to assist with the daily commissions that the Adventurer's Guild has for us after all that food?"
+    t "Oh Paimon, you never cease amaze me. Would you be able to assist with the daily commissions that the Adventurers' Guild has for us after all that food?"
     p "No biggie. Paimon can float, remember. It sure is a blessing."
     t "Yeah, how does that work anyway?"
     p "It just does ... hehe... Now about that breakfast..."
@@ -107,7 +109,7 @@ label downstairs:
     show paimon happy at center with move
     p "So what's today's agenda? Do we have any important meetings to attend? Maybe some treasure horders to whoop up? "
     t "I don't know... The treasure hoarders have been quiet lately. Ever since the treasure hunt during the Lantern Festival, we haven't seen much activity from them. "
-    t "As for meetings, nothing scheduled for today. We should probably head to Lan and Katheryne at the Adventurer's Guild. Check if there are any daily commissions for us. "
+    t "As for meetings, nothing scheduled for today. We should probably head to Lan and Katheryne at the Adventurers' Guild. Check if there are any daily commissions for us. "
     p "Paimon really hopes Lan doesn't send us looking for that sword again. We've look everywhere for it without any success. Guess they call it the *Unseen* Razor for a reason."
     t "Yeah, that's a bummer. I hate disappoining Lan everytime we clean up the monsters and there is no sign of the sword. Let's hope the next hint will lead us straight to it."
     p "That's the spirit! Everytime we go out looking for it, Paimon imagines wielding the sword. *Swoosh* *Swash* Left. Right. Bonk that hilichurl on the head... hehe..."
@@ -127,10 +129,10 @@ label downstairs:
     p "Thank you, Xiuhua!"
     t "Thank you very much!"
     p "Mmmm...This smells so tasty."
-    t "Dig in Paimon. Before it gets too cold. Once we are finished here we'll head to the Adventurer's Guild and check out those commissions."
+    t "Dig in Paimon. Before it gets too cold. Once we are finished here we'll head to the Adventurers' Guild and check out those commissions."
     p "Mhm... Shoundsh gud... *gulp*"
     $ had_breakfast = True
-    $ end_txt = "Paimon and Traveler head to the Adventurer's Guild after breakfast..."
+    $ end_txt = "Paimon and Traveler head to the Adventurers' Guild after breakfast..."
     call end_screen(end_txt) from _call_end_screen_2
     jump wanmin_scene_one
 
@@ -163,13 +165,13 @@ label wanmin_scene_one:
     m "My daughter Xiangling has been nothing but nice as well. Even on her gastronomy trip to Mondstadt, she made a lot of friends. Including you two."
     m "You were with her during the cook-off show, right? Did she upset anyone?"
     t "Well, Brook, the chef from Springvale was a bit upset over the loss of the cook-off but ultimately she was happy to exchange recipes and cooking tips with Xiangling. "
-    t "Even to this day, there is this girl in Springvale, Siegfria, who would put up commissions with the Adventurer's Guild for Jade Parcels. Everyone seemed happy with Xiangling's visit to Mondstadt."
+    t "Even to this day, there is this girl in Springvale, Siegfria, who would put up commissions with the Adventurers' Guild for Jade Parcels. Everyone seemed happy with Xiangling's visit to Mondstadt."
     p "Mmm... Delicious Jade Parcels..."
     m "Then I don't know. I've told the millelith the same thing. I haven't heard complaints on the premises of the restaurant. We are an honest business with no outstanding debt or taxes due."
     p "This doesn't sound right. There must be a logical explanation to why someone would trash the Wanmin Restaurant...but what?"
-    m "I was going to put up a commission with the Adventurer's Guild across the street to further investigate this issue but since you are here, would you like to take on the job?"
+    m "I was going to put up a commission with the Adventurers' Guild across the street to further investigate this issue but since you are here, would you like to take on the job?"
     menu:
-        m "{cps=0}I was going to put up a commission with the Adventurer's Guild across the street to further investigate this issue but since you are here, would you like to take on the job?"
+        m "{cps=0}I was going to put up a commission with the Adventurers' Guild across the street to further investigate this issue but since you are here, would you like to take on the job?"
 
         "We would be happy to!":
             t "Well we haven't been assigned anything from the guild today. I think we can take on this case. What do you think Paimon?"

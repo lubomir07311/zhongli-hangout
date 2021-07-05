@@ -206,6 +206,7 @@ label choices_mondstadt_night:
             jump choices_mondstadt_drinks
 
         "Rent a transport balloon":
+            $ stayed_in_mondstadt = False
             t "It is best to resolve the issue as fast as possible. Besides, if we spend too much time out of Liyue, we are giving the criminal more time to get away."
             z "I haven't thought about it that way. Since we cleared all Mondstadt folk, the criminal must be in Liyue. And we have already wasted so much time with our trip."
             t "I wouldn't call it wasted but I agree. We should spend as much time as possible close to the person responsible. Let's hope they are not long gone by now."
