@@ -3,6 +3,7 @@
 ################################################################################
 
 init offset = -1
+$ global menu_yalign
 
 
 ################################################################################
@@ -210,7 +211,7 @@ screen choice(items):
     window:
         style "empty"
         xalign 0.9 ##<< to change the placement of menu
-        yalign 0.7 ##<<
+        yalign menu_yalign ##<<
 
         vbox:
             style "menu"

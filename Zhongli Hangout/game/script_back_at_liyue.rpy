@@ -19,7 +19,7 @@ label in_front_of_guesthouse:
     jump day_after_liyue
 
 label day_after_liyue:
-    # post guesthouse / post balloon
+    play music "audio/bg_liyue_1.ogg"
     scene bg adv_far
     show paimon happy at right
     if stayed_in_mondstadt:
@@ -81,6 +81,7 @@ label day_after_liyue:
         t "Thanks for the information, Lan. Once we are done with this investigation we will resume the search for the Unsees Razor. It is bound to pop up some place!"
         l "Thanks, Traveler. I hope you're right. And good luck with your current investigation!"
         t "Thanks!"
+        jump outside_shop
     else:
         p "Ughh~ Where is he?"
         t "Don't worry, Paimon. He will be here soon."
@@ -143,3 +144,149 @@ label day_after_liyue:
         t "Thanks for the information, Lan. Once we are done with this investigation we will resume the search for the Unsees Razor. It is bound to pop up some place!"
         l "Thanks, Traveler. I hope you're right. And good luck with your current investigation!"
         t "Thanks!"
+        jump outside_shop
+
+label outside_shop:
+    scene bg yinger
+    show paimon happy at center with dissolve
+    show zh happy at left with dissolve
+
+    p "Hello, Ying'er! So sorry to hear your shop has been attacked."
+    y "Not only has it been attacked, but the Millelith won't even let me in. They say it's a crime scene and until they gather all of the evidence, they won't let me clean it up."
+    z "Perhaps I can do something about it."
+    y "Oh... what is it that you can do to make the Millelith just go away?"
+    z "They won't go away, but I might persuade them to at least let you in the shop and start cleaning up."
+    y "It's a start I suppose. But so many of my perfumes have just been smashed. Now my backlog of orders would have to wait until I replenish the ones that were ready for shipment..."
+    t "I'm sorry to hear that, Ying'er. We are here to help though!"
+    z "While you three are having a chat, I'll go talk to the Millelith - see if I can get us inside."
+    hide zh happy with dissolve
+    t "In order for us to help you, we need to ask you a couple of questions. Is that okay with you?"
+    y "I've already told the Millelith everything I know. Haven't you read the report?"
+    p "We are not working with the Millelith on this. We are conducting an investigation of our own. So far we have been able to eliminate a lot of suspects! With your help, we can narrow it down even further!"
+    t "That's right. We've been on the case for quite some time now."
+    y "Surely you have suspects by now. Tell me who they are and I will give you all of their orders and any information I have on them regading their business with the Scent of Spring."
+    p "Ehe~ we can't... um... disclose the information we might or might not have on any suspects. But you can help us in other ways. Like, have you seen anybody unusual around here? Somebody who might not be physically strong?"
+    y "No, not really. I've seen a couple of more Millelith patroling the area after the attack on the Wanmin Restaurant but that's about it. And a few of the kids like to play in the are but I doubt they can hurl those rocks inside."
+    p "Hmm... the kids you say... Any of them dislike you?"
+    y "What?! No! I even made a light and refreshing perfume for Little Lulu. The kids love me!"
+    p "Is there a chance that Litte Lulu didn't like her perfume?"
+    y "Why would you say that? Do you think my perfumes are not good enough?"
+    t "No, no. Walking by here I always get a good tingling sensation in my nose. Paimon wants to know if there is perhaps somebody who would benefit from trashing your business?"
+    y "I can't think of anybody off the top of my head. Everybody in Liyue loves their fragrances. I have a lot of repeat customers as well!"
+    t "Seems a bit odd for somebody to attack a restaurant and a perfume shop. Assuming it was the same person or people both times. You are two very different lines of business."
+    y "Well it is highly likely it was the same people, because I heard that some large rocks smashed the Wanmin Restaurant's oven the same way they smashed my shelves of glass bottles."
+    t "Yes, yes. It seems like the method of execution was the same."
+    p "And Paimon thinks that there aren't that many people nearby capable of committing such a crime. We will catch them, don't you worry! It would have been convenient if someone disliked you though."
+    t "Paimon! That's not a nice thing to say! You should apologize to Ying'er right now!"
+    p "Sorry, Ying'er. Detective Paimon can be mean at times."
+    y "Apology accepted. I just hope you catch the people responsible and bring them to justice. I would like my fair share of compensation for the damage they've caused and the delays that will occur because of their actions."
+    show zh happy at left with dissolve
+    z "Traveler, Paimon, I got us in. The Millelith have agreed for us to go inside the shop and have a look at the rocks."
+    y "What about me? I need to start cleaning up as soon as possible."
+    z "I've spoken to the Millelith about that as well. They said that the earliest you can access your shop would be tomorrow."
+    y "Unbelievable! I've gotten nothing from then and you walk over and tell me I can have my shop back tomorrow?"
+    z "What can I say - I'm a person of many talents and persuasion is one of them."
+    y "Thank you for your help. I'll be on my way now if there's nothing else I can help you with."
+    p "It seems like you don't have enemies around here or people that would benefit from interrupting your business, but if you think of anyone, please, let us know."
+    y "Will do! And good luck with your investigation."
+    t "Thanks! So, Zhongli, lead the way I guess!"
+    z "Follow me!"
+    scene bg shop_trashed with dissolve
+    show zh happy at left
+    show paimon happy at right
+    p "Look at the mess... It's worse than the Wanmin Restaurant. Whoever did that surely knew how to stike. Ying'er would be in here cleaning up for days!"
+    z "Nevermind the mess, Paimon. We need to focus on the actual evidence - the rocks."
+    p "You're right. Just to confirm they are similar to the ones in the Wanmin Restaurant, Traveler, would you do us the honors of using your elemental sight once again, please?"
+    t "Sure! Hold on."
+    play sound "audio/sight_effect.wav" volume 10
+    pause 0.1
+    scene bg shop_traced with flashbulb
+    pause 1
+    scene bg shop_trashed with flashbulb
+    show zh happy at left
+    show paimon happy at right
+    t "Yep, the stones have elemental traces on them. Just like the ones at the Wanmin Restaurant."
+    z "Yes, it seems like these stones have also been conjured."
+    p "Hey, look that one kinda looks like a boar hehe~"
+    t "Is everything a joke to you, Paimon? Can't you take this investigation a bit more seriously?"
+    z "No, no. Paimon's got a point. Look closer. Here's the snout, and a couple of broken tusks and you can clearly see the remains of what look like boar ears broken off to the side."
+    t "Zhongli, are you seeing thing as well? What's gotten into you two?"
+    p "No, Traveler, come! Look closer. Next to the boar - this one looks like half a squirel."
+    z "And there's the other half - on the other side of the broken shelf."
+    t "Oohh... I see. The shapes do vaguely resemble animals. What a coincidence!"
+    z "One or two might be a coincidence, but look here, beneath this pile of rubble."
+    t "Are those crab claws?"
+    p "Mhm~ And there's a squirel's tail if Paimon's not mistaken."
+    t "So back at the Wanmin Restaurant, you weren't being silly, Paimon. There were actual clues and I just dismissed them quickly."
+    p "You should trust Paimon more! Paimons has eagle eyes! They see all!"
+    z "So what do we have here? Boars, squirels, crabs..."
+    p "That looks like a crane's beak broken in half."
+    z "...crane..."
+    t "Hey, does that look like an animal to you guys? There's an eye but the shape is very strange. Kinda looks like a small snake?"
+    p "Hm~ Oh Paimon knows! That's an {i}electric eel{/i}!"
+    t "An electric eel? What's an electric eel?"
+    p "Electric eels are a special type of fish that is known for their ability to stun their prey by generating electricity."
+    z "Basically, they are the next evolutionary step from the electro slimes. They have minor innate electro abilities but can be a serious threat if not handled properly."
+    p "But if handled properly, they can make a very tasty snack!"
+    t "That's the first I'm hearing of them. How come the Liyue cuisine does not cook them then?"
+    z "See electic eels are exclusive to the region of Inazuma. Liyue just never imported them or adopted them in the local cuisine."
+    t "But if they are exclusive to Inazuma, what are they doing in Ying'er's perfume shop? Petrified?"
+    p "We already know that these rocks were conjured. Do you think somebody actually let wild animals run loose in the shop and once they were done trashing the place - petrified them?"
+    z "Highly unlikely. It looks like the animals are Geo constructs themselves."
+    p "You mean to tell us that just like Rhodeia the Oceanid is able to conjure Hydro mimics, somebody is conjuring Geo mimics and letting them destroy local businesses?"
+    z "It is a good theory, don't you think?"
+    p "But why? And more importantly, who?!"
+    z "This is something we need to figure out for ourselves."
+    t "See, I was confused when I first saw the Geo animals. You said that the electric eels are exclusive to the region of Inazuma, right?"
+    z "That's correct."
+    t "And for someone to conjure an animal, they must have seen it before, right?"
+    p "Paimon likes where you're headed, Traveler. Keep going!"
+    t "So for someone to conjure an eel, they must have seen an eel. That means they must have been to Inazuma!"
+    z "That's some impressive detective skills, Traveler."
+    t "I would not have done it without you! Now we can narrow down the list of suspects quite a lot."
+    z "There's just one problem. As we know, Inazuma is a closed nation. Noone has been there for a while and there are no Inazumans in Liyue as far as I'm aware. Do you know of anybody from Inazuma in Liyue?"
+    jump choices_liyue
+
+label choices_liyue:
+
+    $ globals()['menu_yalign'] = 0.6
+    menu:
+        z "{cps=0}There's just one problem. As we know, Inazuma is a closed nation. Noone has been there for a while and there are no Inazumans in Liyue as far as I'm aware. Do you know of anybody from Inazuma in Liyue?"
+
+        "Bibo":
+            p "The fishmonger? No - he is local, although he did say he once rescued a woman from Inazuma and that was the last time someone left Inazuma illegally."
+            jump choices_liyue_no_bibo
+        "Ivanovich":
+            p "No, you silly goose, Ivanovich is a traveling merchant from Snezhnaya. He gave us that Shivada Jade Fragment, remember?"
+        "Changshun":
+            z "No, she is has pure Liyue blood running through her veins. Woman thinks she can get rich by selling potatoes, cheese and sugar. Good luck to her!"
+        "Xingxi":
+            z "The Mingxing Jewelry owner? It is a family business that has been in Liyue for hundreds of years. Some even call it the Rex Lapis of the market for precious stones. She can't be Inazuman."
+        "Linlang":
+            z "The Xigu Antiques owner? She is one of the bigest Liyue patriots there is. She studied ancient Liyue history. She and Soraya share a passion for the antiques."
+            p "The only odd thing about her is that glowing piece of rock she gave us. She said it came from a star but the ore suppliers tell crazy stories just to sell their stock these days."
+        "Atsuko":
+            jump atsuko_ending_2
+        "Qiming":
+            z "The fortune-teller? Oh no, no. Born and raised in Liyue. And besides, if she could conjure mimics the first thing she would do is conjure a crane and fly Zhihua as far away from her as possible."
+
+    jump inazuma_ending_1
+label choices_liyue_no_bibo:
+
+    $ globals()['menu_yalign'] = 0.65
+    menu:
+        p "{cps=0}The fishmonger? No - he is local, although he did say he once rescued a woman from Inazuma and that was the last time someone left Inazuma illegally."
+
+        "Changshun":
+            z "No, she is has pure Liyue blood running through her veins. Woman thinks she can get rich by selling potatoes, cheese and sugar. Good luck to her!"
+        "Xingxi":
+            z "The Mingxing Jewelry owner? It is a family business that has been in Liyue for hundreds of years. Some even call it the Rex Lapis of the market for precious stones. She can't be Inazuman."
+        "Linlang":
+            z "The Xigu Antiques owner? She is one of the bigest Liyue patriots there is. She studied ancient Liyue history. She and Soraya share a passion for the antiques."
+            p "The only odd thing about her is that glowing piece of rock she gave us. She said it came from a star but the ore suppliers tell crazy stories just to sell their stock these days."
+        "Atsuko":
+            jump atsuko_ending_2
+        "Qiming":
+            z "The fortune-teller? Oh no, no. Born and raised in Liyue. And besides, if she could conjure mimics the first thing she would do is conjure a crane and fly Zhihua as far away from her as possible."
+
+    jump inazuma_ending_1

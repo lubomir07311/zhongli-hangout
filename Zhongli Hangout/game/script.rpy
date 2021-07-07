@@ -4,14 +4,13 @@ define x = Character("Xiuhua", color="#FFFFFF", who_outlines=[(2, "#000", 0, 0)]
 define u = Character("???", color="#FFFFFF", who_outlines=[(2, "#000", 0, 0)])
 define m = Character("Chef Mao", color="#FFD700", who_outlines=[(2, "#000", 0, 0)])
 define l = Character("Lan", color="#FFD700", who_outlines=[(2, "#000", 0, 0)])
+define y = Character("Ying'er", color="#FFD700", who_outlines=[(2, "#000", 0, 0)])
 
 define flashbulb = Fade(0.2, 0.0, 0.8, color ='dfd')
 
 define end_txt = ""
 define stayed_in_mondstadt = True
-
 # The game starts here!
-
 label start:
 
     scene bg room
@@ -32,7 +31,7 @@ label start:
     p "Hey, it wasn't stealing. You offered and Paimon accepted politely. Besides, you are a far better chef than Paimon."
     p "Speaking of food, how about some breakfast?"
     p "I suggest we go downstairs and grab something to eat."
-
+    $ menu_yalign = 0.7
     jump choices
 
 label choices:
