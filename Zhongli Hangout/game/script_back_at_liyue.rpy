@@ -164,9 +164,9 @@ label outside_shop:
     y "I've already told the Millelith everything I know. Haven't you read the report?"
     p "We are not working with the Millelith on this. We are conducting an investigation of our own. So far we have been able to eliminate a lot of suspects! With your help, we can narrow it down even further!"
     t "That's right. We've been on the case for quite some time now."
-    y "Surely you have suspects by now. Tell me who they are and I will give you all of their orders and any information I have on them regading their business with the Scent of Spring."
+    y "Surely you have suspects by now. Tell me who they are and I will give you all of their orders and any information I have on them regarding their business with the Scent of Spring."
     p "Ehe~ we can't... um... disclose the information we might or might not have on any suspects. But you can help us in other ways. Like, have you seen anybody unusual around here? Somebody who might not be physically strong?"
-    y "No, not really. I've seen a couple of more Millelith patroling the area after the attack on the Wanmin Restaurant but that's about it. And a few of the kids like to play in the are but I doubt they can hurl those rocks inside."
+    y "No, not really. I've seen a couple of more Millelith patrolling the area after the attack on the Wanmin Restaurant but that's about it. And a few of the kids like to play in the are but I doubt they can hurl those rocks inside."
     p "Hmm... the kids you say... Any of them dislike you?"
     y "What?! No! I even made a light and refreshing perfume for Little Lulu. The kids love me!"
     p "Is there a chance that Litte Lulu didn't like her perfume?"
@@ -194,8 +194,8 @@ label outside_shop:
     scene bg shop_trashed with dissolve
     show zh happy at left
     show paimon happy at right
-    p "Look at the mess... It's worse than the Wanmin Restaurant. Whoever did that surely knew how to stike. Ying'er would be in here cleaning up for days!"
-    z "Nevermind the mess, Paimon. We need to focus on the actual evidence - the rocks."
+    p "Look at the mess... It's worse than the Wanmin Restaurant. Whoever did that surely knew how to strike. Ying'er would be in here cleaning up for days!"
+    z "Never mind the mess, Paimon. We need to focus on the actual evidence - the rocks."
     p "You're right. Just to confirm they are similar to the ones in the Wanmin Restaurant, Traveler, would you do us the honors of using your elemental sight once again, please?"
     t "Sure! Hold on."
     play sound "audio/sight_effect.wav" volume 10
@@ -211,15 +211,15 @@ label outside_shop:
     t "Is everything a joke to you, Paimon? Can't you take this investigation a bit more seriously?"
     z "No, no. Paimon's got a point. Look closer. Here's the snout, and a couple of broken tusks and you can clearly see the remains of what look like boar ears broken off to the side."
     t "Zhongli, are you seeing thing as well? What's gotten into you two?"
-    p "No, Traveler, come! Look closer. Next to the boar - this one looks like half a squirel."
+    p "No, Traveler, come! Look closer. Next to the boar - this one looks like half a squirrel."
     z "And there's the other half - on the other side of the broken shelf."
     t "Oohh... I see. The shapes do vaguely resemble animals. What a coincidence!"
     z "One or two might be a coincidence, but look here, beneath this pile of rubble."
     t "Are those crab claws?"
-    p "Mhm~ And there's a squirel's tail if Paimon's not mistaken."
+    p "Mhm~ And there's a squirrel's tail if Paimon's not mistaken."
     t "So back at the Wanmin Restaurant, you weren't being silly, Paimon. There were actual clues and I just dismissed them quickly."
     p "You should trust Paimon more! Paimons has eagle eyes! They see all!"
-    z "So what do we have here? Boars, squirels, crabs..."
+    z "So what do we have here? Boars, squirrels, crabs..."
     p "That looks like a crane's beak broken in half."
     z "...crane..."
     t "Hey, does that look like an animal to you guys? There's an eye but the shape is very strange. Kinda looks like a small snake?"
@@ -229,7 +229,7 @@ label outside_shop:
     z "Basically, they are the next evolutionary step from the electro slimes. They have minor innate electro abilities but can be a serious threat if not handled properly."
     p "But if handled properly, they can make a very tasty snack!"
     t "That's the first I'm hearing of them. How come the Liyue cuisine does not cook them then?"
-    z "See electic eels are exclusive to the region of Inazuma. Liyue just never imported them or adopted them in the local cuisine."
+    z "See electric eels are exclusive to the region of Inazuma. Liyue just never imported them or adopted them in the local cuisine."
     t "But if they are exclusive to Inazuma, what are they doing in Ying'er's perfume shop? Petrified?"
     p "We already know that these rocks were conjured. Do you think somebody actually let wild animals run loose in the shop and once they were done trashing the place - petrified them?"
     z "Highly unlikely. It looks like the animals are Geo constructs themselves."
@@ -244,14 +244,14 @@ label outside_shop:
     t "So for someone to conjure an eel, they must have seen an eel. That means they must have been to Inazuma!"
     z "That's some impressive detective skills, Traveler."
     t "I would not have done it without you! Now we can narrow down the list of suspects quite a lot."
-    z "There's just one problem. As we know, Inazuma is a closed nation. Noone has been there for a while and there are no Inazumans in Liyue as far as I'm aware. Do you know of anybody from Inazuma in Liyue?"
+    z "There's just one problem. As we know, Inazuma is a closed nation. No one has been there for a while and there are no Inazumans in Liyue as far as I'm aware. Do you know of anybody from Inazuma in Liyue?"
     jump choices_liyue
 
 label choices_liyue:
 
     $ globals()['menu_yalign'] = 0.6
     menu:
-        z "{cps=0}There's just one problem. As we know, Inazuma is a closed nation. Noone has been there for a while and there are no Inazumans in Liyue as far as I'm aware. Do you know of anybody from Inazuma in Liyue?"
+        z "{cps=0}There's just one problem. As we know, Inazuma is a closed nation. No one has been there for a while and there are no Inazumans in Liyue as far as I'm aware. Do you know of anybody from Inazuma in Liyue?"
 
         "Bibo":
             p "The fishmonger? No - he is local, although he did say he once rescued a woman from Inazuma and that was the last time someone left Inazuma illegally."
@@ -263,7 +263,7 @@ label choices_liyue:
         "Xingxi":
             z "The Mingxing Jewelry owner? It is a family business that has been in Liyue for hundreds of years. Some even call it the Rex Lapis of the market for precious stones. She can't be Inazuman."
         "Linlang":
-            z "The Xigu Antiques owner? She is one of the bigest Liyue patriots there is. She studied ancient Liyue history. She and Soraya share a passion for the antiques."
+            z "The Xigu Antiques owner? She is one of the biggest Liyue patriots there are. She studied ancient Liyue history. She and Soraya share a passion for the antiques."
             p "The only odd thing about her is that glowing piece of rock she gave us. She said it came from a star but the ore suppliers tell crazy stories just to sell their stock these days."
         "Atsuko":
             jump atsuko_ending_2
@@ -282,7 +282,7 @@ label choices_liyue_no_bibo:
         "Xingxi":
             z "The Mingxing Jewelry owner? It is a family business that has been in Liyue for hundreds of years. Some even call it the Rex Lapis of the market for precious stones. She can't be Inazuman."
         "Linlang":
-            z "The Xigu Antiques owner? She is one of the bigest Liyue patriots there is. She studied ancient Liyue history. She and Soraya share a passion for the antiques."
+            z "The Xigu Antiques owner? She is one of the biggest Liyue patriots there are. She studied ancient Liyue history. She and Soraya share a passion for the antiques."
             p "The only odd thing about her is that glowing piece of rock she gave us. She said it came from a star but the ore suppliers tell crazy stories just to sell their stock these days."
         "Atsuko":
             jump atsuko_ending_2
