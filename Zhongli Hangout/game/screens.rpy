@@ -242,7 +242,8 @@ style choice_button is button:
     xmaximum int(config.screen_width * 0.5)
 
 style choice_button_text is button_text:
-    ypos 0.21
+    ypos 0.22
+    xpos 0.02
 
 style choice_vbox:
     xalign 0.5
