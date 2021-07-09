@@ -5,6 +5,8 @@ define u = Character("???", color="#FFFFFF", who_outlines=[(2, "#000", 0, 0)])
 define m = Character("Chef Mao", color="#FFD700", who_outlines=[(2, "#000", 0, 0)])
 define l = Character("Lan", color="#FFD700", who_outlines=[(2, "#000", 0, 0)])
 define y = Character("Ying'er", color="#FFD700", who_outlines=[(2, "#000", 0, 0)])
+define a = Character("Ayaka", color="#FFD700", who_outlines=[(2, "#000", 0, 0)])
+define g = Character("Millileth Guard", color="#FFD700", who_outlines=[(2, "#000", 0, 0)])
 
 define flashbulb = Fade(0.2, 0.0, 0.8, color ='dfd')
 
