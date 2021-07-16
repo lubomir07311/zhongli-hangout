@@ -54,7 +54,7 @@ label choices_in:
     t "I heard that the kitchen at the Baiju Guesthouse serves the best Fullmoon Egg in Liyue."
     p "Mmmm.. Fullmoon Egg. Fresh fish, mixed with the finest shrimp, diced and minced to perfection. Stuffed in an eggy dough and steamed over medium heat. "
     t " Um, Paimon, you're drooling."
-    "Paimon wipes her drool off"
+    "{i}*Paimon wipes her drool off*{/i}"
     p "Okay then, let's get going."
     $ end_txt = "Paimon and the Traveler head downstairs for breakfast..."
     call end_screen(end_txt) from _call_end_screen
@@ -104,7 +104,7 @@ label downstairs:
 
     x "Excellent choice. So all together - one [food] for you and two Fullmoon Eggs with a glass of water for the little one."
     p "Hey! Who are you calling little? I'll have you know that Paimon has a very big personality... and appetite."
-    "Paimon's stomach rumbles"
+    "{i}*Paimon's stomach rumbles*{/i}"
     p "Please hurry with the order. Paimon is starving."
     x "Oh, my. Your order will be with you shortly."
     hide xiuhua with dissolve
@@ -115,8 +115,8 @@ label downstairs:
     t "I don't know... The treasure hoarders have been quiet lately. Ever since the treasure hunt during the Lantern Festival, we haven't seen much activity from them. "
     t "As for meetings, nothing scheduled for today. We should probably head to Lan and Katheryne at the Adventurers' Guild. Check if there are any daily commissions for us. "
     p "Paimon really hopes Lan doesn't send us looking for that sword again. We've look everywhere for it without any success. Guess they call it the *Unseen* Razor for a reason."
-    t "Yeah, that's a bummer. I hate disappoining Lan everytime we clean up the monsters and there is no sign of the sword. Let's hope the next hint will lead us straight to it."
-    p "That's the spirit! Everytime we go out looking for it, Paimon imagines wielding the sword. *Swoosh* *Swash* Left. Right. Bonk that hilichurl on the head... hehe..."
+    t "Yeah, that's a bummer. I hate disappointing Lan everytime we clean up the monsters and there is no sign of the sword. Let's hope the next hint will lead us straight to it."
+    p "That's the spirit! Every time we go out looking for it, Paimon imagines wielding the sword. *Swoosh* *Swash* Left. Right. Bonk that hilichurl on the head... hehe..."
     t "Paimon! I didn't know you wanted to wield a sword. Why haven't you said anything to me before?"
     p "Well Paimon doesn't really want to. Paimon likes being on the sidelines while you are fighting, doing the best cheering possible."
     p "You can't deny that Paimon helps you in battle mentally...just... not physically."
@@ -132,7 +132,7 @@ label downstairs:
     x "One [food] for you and two Fullmoon Eggs with a glass of water for you. Enjoy your meal!"
     p "Thank you, Xiuhua!"
     t "Thank you very much!"
-    p "Mmmm...This smells so tasty."
+    p "Mmmm... This smells so tasty."
     t "Dig in Paimon. Before it gets too cold. Once we are finished here we'll head to the Adventurers' Guild and check out those commissions."
     p "Mhm... Shoundsh gud... *gulp*"
     $ had_breakfast = True
@@ -187,7 +187,7 @@ label wanmin_scene_one:
     m "Thank you so much! I would compensate you greatly for you trouble. And you can come by for a free meal after we are back in business."
     p "Free meal?! Oh, Chef Mao, you really know how to get Paimon going. Let's crack the case wide open then, shall we, Traveler?"
     t "Okay, but where do we start? "
-    p "The crime scene..duuh... We need to inspect those rocks."
+    p "The crime scene... duuh... We need to inspect those rocks."
     t "Good thinking, Paimon. But I'm not much of a rock expert. Are you?"
     p "Well, not really. But do you have any better idea where to start?"
     t "*sigh* I guess not. Come on, let's have a closer look at the rocks."

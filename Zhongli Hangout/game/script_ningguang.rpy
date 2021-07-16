@@ -10,7 +10,7 @@ label ningguang_office:
     show bu happy at right
 
     b "The moon drinks alone in Guyun's skies, while the great mansion sinks beneath its tides..."
-    b "...I wonder, what business brings you here today, honored guests?"
+    b "...I wonder what business brings you here today, honored guests?"
     z "Greetings good man. We are here to meet Lady Ningguang."
     b "I'm afraid that she is occupied by administrative tedium, and cannot meet you presently."
     p "It is super-duper important, Mr. Bu'yun. You know us. We won't bother Lady Ningguang if we didn't have a solid reason."
@@ -35,12 +35,12 @@ label ningguang_office:
     show zh happy at left
     show paimon happy at right
 
-    p "Well at least we can scratch Lady Ningguang off the list of suspects. There is no way she could have went down to the Wanmin restaurant without leaving the Yuehai Pavilion."
+    p "Well at least we can scratch Lady Ningguang off the list of suspects. There is no way she could have gone down to the Wanmin restaurant without leaving the Yuehai Pavilion."
     z "Agreed. And as I suspected, we did waste quite a bit of our time. At least we didn't waste any of Lady Ningguang's time as precious as it is, considering the business she is dealing with."
 
 label mondstadt_trip_talk:
-    p "Hey Zhongli, are there any other Geo vision bearers around? Has the Geo archon granted any new visions lately that we aren't aware of?"
-    z "The Geo archon is {i}\"gone\"{/i} as you know very well. Don't think new Geo visions will be issued anytime soon."
+    p "Hey Zhongli, are there any other Geo vision bearers around? Has the Geo Archon granted any new visions lately that we aren't aware of?"
+    z "The Geo Archon is {i}\"gone\"{/i} as you know very well. Don't think new Geo visions will be issued anytime soon."
     p "Had to check, just in case. You know... eliminating all possibilities."
     z "If it wasn't anyone from Liyue, maybe it is a guest of the city? Someone who couldn't handle Liyue's spicy cuisine and decided to take it out on the restaurant?"
     t "Uh-uh..."
@@ -59,7 +59,7 @@ label mondstadt_trip_talk:
     p "Fairly spicy and currently unavailable. Paimon is sad and hungry..."
     t "She had the food and complained a little bit but after all was said and done, there were no hard feelings left. We went back to Mondstadt on our merry way to continue with the preparation for the exam."
     z "I see. And this girl you say wouldn't hurt anybody?"
-    t "Typically, no. She is well known in Mondstadt to be a protector of the weaker. Everybody has good relations with her. But last time we saw her, I was worried she might have overworked herself."
+    t "Typically, no. She is well-known in Mondstadt to be a protector of the weaker. Everybody has good relations with her. But last time we saw her, I was worried she might have overworked herself."
     p "Who knows what goes inside that pretty little head of hers. What if something has finally snapped and she came back to Liyue to destroy the man who burned her delicate tongue?"
     t "Um... highly unlikely... but I don't have any better suggestions. Anyone else?"
     p "Too late. She has been added to Paimon's list. Time for a trip to Mondstadt. Zhongli, will you be accompanying us?"

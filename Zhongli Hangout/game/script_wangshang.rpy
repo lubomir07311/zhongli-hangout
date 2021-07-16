@@ -54,11 +54,11 @@ label parlor:
     show zh happy at left
     show paimon happy at right
 
-    t "Wow, the rocks are resonating strong geo energy. I was able to see it clearly with my elemental sight."
-    p "*gasp* .. Paimon is afraid we are not dealing with small town vandals anymore."
-    z "You have every right to be concerned, Paimon. Whoever did this must have a good motive. They've put so much geo energy into this unlawful act."
+    t "Wow, the rocks are resonating strong Geo energy. I was able to see it clearly with my elemental sight."
+    p "{i}*gasp*{/i} .. Paimon is afraid we are not dealing with small town vandals anymore."
+    z "You have every right to be concerned, Paimon. Whoever did this must have a good motive. They've put so much Geo energy into this unlawful act."
     t "But Chef Mao said that there is nobody that holds a grudge over his family or business. We don't have a list of suspects to work off of..."
-    p "Maybe we should put the motive aside for a moment and think of the people who could actually have committed the crime... you know... the people who can manipulate the geo element."
+    p "Maybe we should put the motive aside for a moment and think of the people who could actually have committed the crime... you know... the people who can manipulate the Geo element."
     t "Paimon! Don't look at me like that... I've been with you this entire time. When could have I done it?"
     p "Well, Paimon was sound asleep last night. What were you doing?"
     t "Uh.. Sleeping... next to you... I like the Wanmin Restaurant and Xiangling is a good friend of ours. Besides, I think you would have noticed if I had gone missing in the storm last night. My clothes would not have had the time to dry until the morning."
@@ -103,7 +103,7 @@ label parlor:
             p "Fairly spicy and currently unavailable. Paimon is sad and hungry..."
             t "She had the food and complained a little bit but after all was said and done, there were no hard feelings left. We went back to Mondstadt on our merry way to continue with the preparation for the exam."
             z "I see. And this girl you say wouldn't hurt anybody?"
-            t "Typically, no. She is well known in Mondstadt to be a protector of the weaker. Everybody has good relations with her. But last time we saw her, I was worried she might have overworked herself."
+            t "Typically, no. She is well-known in Mondstadt to be a protector of the weaker. Everybody has good relations with her. But last time we saw her, I was worried she might have overworked herself."
             p "Who knows what goes inside that pretty little head of hers. What if something has finally snapped and she came back to Liyue to destroy the man who burned her delicate tongue?"
             t "Um... highly unlikely... but I don't have any better suggestions. Anyone else?"
             p "Too late. She has been added to Paimon's list. Time for a trip to Mondstadt."
