@@ -15,7 +15,7 @@ label in_front_of_guesthouse:
     z "Be safe tonight! Both of you."
     p "B-bye~"
     $ end_txt = "The morning after..."
-    call end_screen(end_txt)
+    call end_screen(end_txt) from _call_end_screen_21
     jump day_after_liyue
 
 label day_after_liyue:

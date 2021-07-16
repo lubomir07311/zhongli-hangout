@@ -53,7 +53,7 @@ label inazuma_ending_1:
     p "Mhm~ Now, let's finish our Fullmoon Eggs and go upstairs to pack."
 
     $ end_txt = "Later on upstairs..."
-    call end_screen(end_txt)
+    call end_screen(end_txt) from _call_end_screen_8
 
     scene bg room with dissolve
 
@@ -91,7 +91,7 @@ label inazuma_ending_1:
     t "Alrighty then. Lights out."
 
     $ end_txt = "Early the next morning..."
-    call end_screen(end_txt)
+    call end_screen(end_txt) from _call_end_screen_9
 
     scene bg docks with dissolve
     p "Hey, wait up."
@@ -158,7 +158,7 @@ label inazuma_ending_1:
     p "Zhongli!!!"
 
     $ end_txt = "The party sails off into the sea..."
-    call end_screen(end_txt)
+    call end_screen(end_txt) from _call_end_screen_10
     play music "audio/bg_inazuma.mp3"
     pause 0.1
     scene bg inazuma with dissolve
@@ -196,7 +196,7 @@ label inazuma_ending_1:
     a "I would love for us to have more time to get to know each other, but in your message I picked up a sense of urgency, Zhongli. What is going on?"
 
     $ end_txt = "Zhongli fills Ayaka in on the incidents in Liyue..."
-    call end_screen(end_txt)
+    call end_screen(end_txt) from _call_end_screen_11
 
     scene bg inazuma
     show paimon happy at left
@@ -286,9 +286,9 @@ label inazuma_ending_1:
     t "Sounds good to me. Let's go."
 
     $ end_txt = "The party fills the bag and makes it to the ship..."
-    call end_screen(end_txt)
+    call end_screen(end_txt) from _call_end_screen_12
     $ end_txt = "...then they sail off into the night..."
-    call end_screen(end_txt)
+    call end_screen(end_txt) from _call_end_screen_13
 
     scene bg liyue_back with dissolve
 
@@ -313,7 +313,7 @@ label inazuma_ending_1:
     z "There should be plenty of Millelith on the docks. We should find one easily and ask what's happening once we arrive."
 
     $ end_txt = "The Mizar docks at Liyue harbor safely..."
-    call end_screen(end_txt)
+    call end_screen(end_txt) from _call_end_screen_14
 
     scene bg millelith with dissolve
     show paimon happy at left with dissolve
@@ -345,6 +345,6 @@ label inazuma_ending_1:
     pause 0.1
 
     $ end_txt = "Baal always gets what she desires..."
-    call end_screen(end_txt)
+    call end_screen(end_txt) from _call_end_screen_15
     $ end_txt = "The End #1"
-    call end_screen(end_txt)
+    call end_screen(end_txt) from _call_end_screen_16

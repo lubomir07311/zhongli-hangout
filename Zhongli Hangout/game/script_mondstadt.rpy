@@ -218,7 +218,7 @@ label choices_mondstadt_night:
             t "Paimon's right. Let's find a balloon and get out of here as soon as possible."
             $ end_txt = "The party rents a transport balloon and makes it back to Liyue before the storm"
 
-            call end_screen(end_txt)
+            call end_screen(end_txt) from _call_end_screen_4
             jump in_front_of_guesthouse
 
 label choices_mondstadt_drinks:
@@ -233,7 +233,7 @@ label choices_mondstadt_drinks:
             t "Heh... I'm not, but I do like spending time in a good company."
             z "It is settled then. Lead the way!"
             $ end_txt = "The party enjoys a night of cocktails at the Cat's Tail..."
-            call end_screen(end_txt)
+            call end_screen(end_txt) from _call_end_screen_5
             jump mondstadt_day_after
 
         "Angel's Share":
@@ -249,7 +249,7 @@ label choices_mondstadt_drinks:
             z "No, not a challenge but a fact!"
             p "We'll see, Zhongli. Let's go find a table before it's too late."
             $ end_txt = "The party enjoys a nice dinner at the Angel's Share..."
-            call end_screen(end_txt)
+            call end_screen(end_txt) from _call_end_screen_6
             jump mondstadt_day_after
 
 label mondstadt_day_after:
@@ -275,5 +275,5 @@ label mondstadt_day_after:
     z "Aaahh... Friendly bickering... never gets old. And I have to spend the whole trip back listening to this."
     p "Yes, right, the trip. Let's get going!"
     $ end_txt = "The party takes a trip back to Liyue Harbor..."
-    call end_screen(end_txt)
+    call end_screen(end_txt) from _call_end_screen_7
     jump day_after_liyue

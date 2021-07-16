@@ -30,7 +30,7 @@ label parlor:
     t "Thank you for agreeing to help us on such a short notice, Zhongli. As soon as the Wanmin Restaurant is back in business, we are going to treat you to a nice bowl of Boiled Fish."
     z "That would be a nice change from the usual I get at the Liuli Pavilion. We have a deal. Lead the way!"
     $ end_txt = "Back at the Wanmin Restaurant..."
-    call end_screen(end_txt)
+    call end_screen(end_txt) from _call_end_screen_18
 
     scene bg wanmin trashed
     show zh happy at left with dissolve
@@ -111,7 +111,7 @@ label parlor:
             t "It is settled then. Let's pack our things and get going."
 
             $ end_txt = "The party takes a trip to the city of Mondstadt..."
-            call end_screen(end_txt)
+            call end_screen(end_txt) from _call_end_screen_19
 
             jump mondstadt_square
 
@@ -125,7 +125,7 @@ label choices_ningguang:
             z "I guess we are going to the Yuehai Pavilion then?"
             p "Yup! To the Yuehai Pavilion to clear Lady Ningguang's name."
             $ end_txt = "The party makes its way to the Yuehai Pavilion..."
-            call end_screen(end_txt)
+            call end_screen(end_txt) from _call_end_screen_20
 
             jump ningguang_office
 

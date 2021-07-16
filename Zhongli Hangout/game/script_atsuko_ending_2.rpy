@@ -124,7 +124,7 @@ label atsuko_ending_2:
     z "That sounds like a good first session. Lead the way, Traveler!"
 
     $ end_txt = "On the outskirts of Liyue Harbor..."
-    call end_screen(end_txt)
+    call end_screen(end_txt) from _call_end_screen_22
 
     scene bg outskirts
     show paimon happy at left with dissolve
@@ -234,7 +234,7 @@ label demoralized:
     p "Yay~ Liuli Pavilion, the best Tiansu meat in Liyue."
 
     $ end_txt = "After dinner at the Liuli Pavilion..."
-    call end_screen(end_txt)
+    call end_screen(end_txt) from _call_end_screen_23
 
     scene bg liuli
     show zh happy at left with dissolve
@@ -315,7 +315,7 @@ label demoralized:
     t "One day, when we get to Inazuma, we will find her once again. And when we do, I'm not taking no for an answer."
 
     $ end_txt = "One day we will find her once again..."
-    call end_screen(end_txt)
+    call end_screen(end_txt) from _call_end_screen_24
     jump the_end
 
 label inspired:
@@ -350,7 +350,7 @@ label inspired:
     t "We wouldn't have done it without your guidance, Zhongli. Thanks for that."
     z "You are very welcome. Now about that dinner you owe me?"
     $ end_txt = "One day we will free the people of Inazuma..."
-    call end_screen(end_txt)
+    call end_screen(end_txt) from _call_end_screen_25
     jump the_end_3
 
 label the_end:
