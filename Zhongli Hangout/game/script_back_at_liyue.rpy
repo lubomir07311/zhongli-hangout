@@ -251,7 +251,7 @@ label choices_liyue:
 
     $ globals()['menu_yalign'] = 0.6
     menu:
-        z "{cps=0}There's just one problem. As we know, Inazuma is a closed nation. No one has been there for a while and there are no Inazumans in Liyue as far as I'm aware. Do you know of anybody from Inazuma in Liyue?"
+        z "{cps=0}There's just one problem. As we know, Inazuma is a closed nation. No one has been there for a while and there are no Inazumans in Liyue as far as I'm aware. Do you know of anybody from Inazuma in Liyue?{/cps}"
 
         "Bibo":
             p "The fishmonger? No - he is local, although he did say he once rescued a woman from Inazuma and that was the last time someone left Inazuma illegally."
@@ -275,7 +275,7 @@ label choices_liyue_no_bibo:
 
     $ globals()['menu_yalign'] = 0.65
     menu:
-        p "{cps=0}The fishmonger? No - he is local, although he did say he once rescued a woman from Inazuma and that was the last time someone left Inazuma illegally."
+        p "{cps=0}The fishmonger? No - he is local, although he did say he once rescued a woman from Inazuma and that was the last time someone left Inazuma illegally.{/cps}"
 
         "Changshun":
             z "No, she is has pure Liyue blood running through her veins. Woman thinks she can get rich by selling potatoes, cheese and sugar. Good luck to her!"

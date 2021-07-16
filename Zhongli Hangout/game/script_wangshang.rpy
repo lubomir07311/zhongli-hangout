@@ -67,7 +67,7 @@ label parlor:
     z "Chef Mao is an honest businessman and runs an exquisite restaurant. It would be unethical of me to ruin it. This will damage Liyue's economy and is not in my best interest."
     p "Sorry, Zhongli. Paimon should have not doubted any of you in the first place. Just trying to cross names of the suspect list. If not you two, who do we have left?"
     menu:
-        p "{cps=0}Sorry, Zhongli. Paimon should have not doubted any of you in the first place. Just trying to cross names of the suspect list. If not you two, who do we have left?"
+        p "{cps=0}Sorry, Zhongli. Paimon should have not doubted any of you in the first place. Just trying to cross names of the suspect list. If not you two, who do we have left?{/cps}"
 
         "Lady Ningguang":
             t "The only other Liyue Geo vision bearer would be Lady Ningguang."
@@ -118,7 +118,7 @@ label parlor:
 label choices_ningguang:
 
     menu:
-        p "{cps=0}Exactly! So should we pay her a visit?"
+        p "{cps=0}Exactly! So should we pay her a visit?{/cps}"
 
         "We have time for a visit":
             t "It shouldn't take long. Let's try and clear the more obviously innocent people first and later we can focus on the vague options."

@@ -49,9 +49,9 @@ label atsuko_ending_2:
     t "Is everything okay, Atsuko? You don't look well."
     ats "It's just... I've had some bad dreams during the storms."
     p "What do you mean {i}bad dreams{/i}?"
-    ats "Every night there's a storm outside, I barely catch any sleep. I'm tormented by nightmares. Nightmares of all sorts of animals chasing me. But the really strange part is that there animals are made of stone."
+    ats "Every night there's a storm outside, I barely catch any sleep. I'm tormented by nightmares. Nightmares of all sorts of animals chasing me. But the really strange part is that these animals are made of stone."
     z "Where are those animals chasing you?"
-    ats "On the streets of Liyue. I try to run away, but they keep on catching up to me. The first time they caught up to me was in front of the Wanmin Restaurant. They cornered me and I had nowhere to run."
+    ats "On the streets of Liyue. I tried to run away, but they kept on catching up to me. The first time they caught up to me was in front of the Wanmin Restaurant. They cornered me and I had nowhere to run."
     p "So how did you escape?"
     ats "I didn't. The pack of animals charged at me full speed. I closed my eyes and braced myself for the impact. I could hear them approaching closer and closer. But once they got to me I woke up screaming. Covered in cold sweat."
     p "That's awful! At least you got out of it safely."
@@ -72,7 +72,7 @@ label atsuko_ending_2:
 
     ats "Like I said, it was the night of the first big storm recently. As far as a drastic change - not that I'm aware of. My daily routine is pretty mundane. It consists of work, walks, food and sleep. Although I think I might have caught someone's attention."
     t "Hmm? What makes you say that?"
-    ats "Someone left this piece of jewelry at my place one day. I don't know what it is and I haven't really showed it to anyone. Still trying to figure out the sender first. Maybe you can help me?"
+    ats "Someone left this piece of jewelry at my place one day. I don't know what it is and I haven't really shown it to anyone. Still trying to figure out the sender first. Maybe you can help me?"
 
     "{i}*Atsuko pulls out an Inazuma Geo Vision*{/i}"
 
@@ -103,9 +103,11 @@ label atsuko_ending_2:
     z "They are not around anymore. You have to carry on the Vision's legacy as its chosen one."
     ats "The Vision's chosen one? But why?"
     z "This question, I cannot answer. The reasons are beyond me. If we keep on exploring this narrative, we might get to the answer though."
-    ats "I left Inazuma to be as far away as possible from Visions and the Electro Archon. I don't want to end up like the previous bearer of this Vision."
-    p "Don't look at it negatively. Try to see it as a gift. A gift that you can controll."
-    ats "But... I can't controll it. Oh no... Does that mean that I caused all the attacks? They weren't just dreams - they actually happened?"
+    ats "Why is it glowing orange and why is there a Geo symbol on it specifically?"
+    z "It could be that the Vision is trying to help you accustom to the local culture. Since Liyue is the land of Geo, what better way to integrate in this society, than to wield the power of the local element?"
+    ats "I left Inazuma to be as far away as possible from the power of Visions and the Electro Archon. I don't want to end up like the previous bearer of this Vision."
+    p "Don't look at it negatively. Try to see it as a gift. A gift that you can control."
+    ats "But... I can't control it. Oh no... Does that mean that I caused all the attacks? They weren't just dreams - they actually happened?"
     z "I suspect as much. But it's not your fault. You still don't know how to control and harness the powers of the Vision."
     ats "I can't control it. It seems like it is controlling me. I don't want to hurt people. Please... take it away from me."
     z "I'm afraid I can't do that. But I can do you one better - I have a Geo Vision of my own. How about I teach you how to use it?"
@@ -133,7 +135,7 @@ label atsuko_ending_2:
     z "What a wonderful view. Traveler, how do you know about this spot?"
     t "Been here a few times. I've taken poets and painters here to find their muse."
     z "It truly is fascinating."
-    p "Eh-em. We didn't come here for a picnic and inspiration. Atsuko could really use guidance in harnessing the power of Geo."
+    p "Eh-em. We didn't come here for a picnic or inspiration. Atsuko could really use guidance in harnessing the power of Geo."
     t "Paimon's right. Let's get to work. We can enjoy the view when we take a break."
     z "Very well then. Miss Atsuko, could you show us that you can do so far?"
     ats "I... I can't do anything. All those times you say I conjured Geo animals, it seemed like it was out of my control. They were just there... chasing me."
@@ -156,7 +158,7 @@ label atsuko_ending_2:
     "{i}*Atsuko conjures a Geo Mimic Finch next to the real one*{/i}"
     p "You did it! Way to go, Atsuko!"
     ats "I... I did it? I did it!"
-    t "Impressive! See, you are a natural. You just needed the right guidance."
+    t "Impressive! See, you are a natural. You just need the right guidance."
     ats "I did it. I can't believe it. I'm using the power of Geo at will."
     z "Very well done, Miss Atsuko."
     p "Now that you got the hang of it, Paimon thinks you are ready for a challenge. There's a squirrel jumping nearby. Do you see it? Right there by the pinecones."
@@ -170,7 +172,7 @@ label atsuko_ending_2:
     ats "You are amazing, Traveler. I hope one day I will be able to wield the power of Geo like yourself."
     t "Patience and practice is the key."
     ats "How about some more practice just now? Hey, is that a boar in the distance?"
-    z "Careful, you don't want to jump to larger animals too quickly. From the rubble left behind at the Scent of Spring we know that you can conjure a boar. But can you controll it?"
+    z "Careful, you don't want to jump to larger animals too quickly. From the rubble left behind at the Scent of Spring we know that you can conjure a boar. But can you control it?"
     ats "I believe I can! I want to give it a go!"
     z "Very well. This time, focus on the larger shapes first - the torso, the head, four legs, a pair of tusks..."
     "{i}*Atsuko conjures a Geo Mimic Boar right next to her*{/i}"
@@ -190,13 +192,14 @@ label atsuko_ending_2:
 
     $ globals()['menu_yalign'] = 0.7
     menu:
-        p "{cps=0}Oh no, the Geo Mimic Boar is on the loose. And it's charging our way. Zhongli! Watch out!"
+        p "{cps=0}Oh no, the Geo Mimic Boar is on the loose. And it's charging our way. Zhongli! Watch out!{/cps}"
 
         "Push Zhongli away":
             show paimon with vpunch
             "{i}*The Traveler gets trampled by the Geo Mimic Boar*{/i}"
             jump demoralized
         "Cast Starfell Sword":
+            show paimon with hpunch
             t "Starfell Sword!"
             jump inspired
 
@@ -209,8 +212,8 @@ label demoralized:
     ats "I'm sorry, I didn't mean to do that. And now because of me, the Traveler is injured."
     t "I'll be fine, just need a few apples and perhaps a Sweet Madame."
     ats "No! This is unacceptable! Why did you make me think I'll be able to handle such powers? I don't want them! I don't want to hurt people!"
-    p "Calm down, Atsuko. It was just an accident. With practice you will be able to master the power of your Vision."
-    ats "Practice? How many accidents will occur in the process? How many people will I hurt unintentionally? How many business will I wreck before you realize this power is not mine to keep."
+    p "Calm down, Atsuko. It was just an accident. With practice, you will be able to master the power of your Vision."
+    ats "Practice? How many accidents will occur in the process? How many people will I hurt unintentionally? How many businesses will I wreck before you realize this power is not mine to keep."
     t "Don't say that. This power is a gift..."
     ats "A gift? It feels more like a curse. I don't want anything to do with it. Ever again!"
     z "You can't just give up. We've made so much progress today. And there's always tomorrow. You will get the hang of it."
@@ -233,7 +236,130 @@ label demoralized:
     $ end_txt = "After dinner at the Liuli Pavilion..."
     call end_screen(end_txt)
 
-    "TBC"
+    scene bg liuli
+    show zh happy at left with dissolve
+    show paimon happy at right with dissolve
+
+    p "Aahh... Paimon's so full."
+    t "Of course you are. Who eats two main courses anyway?"
+    z "And a desert."
+    p "Hey! Paimon was hungry, okay? Now Paimon can barely float."
+    t "That's still a mistery to me. How do you float again?"
+    p "Please..."
+    z "Thank you both for dinner. It's been great catching up with you the past few days. I'm glad we were able to get to the bottom of this chaos."
+    t "Well, actually, we still haven't resolved it. I'm still worried about Atsuko. Do you think she is better now?"
+    z "I don't know her that well, but perhaps the initial shoc from the accident from earlier has passed and she is calmer now."
+    t "I can't help but think, that she will be afraid of using her power again after accidentally trampling me earlier."
+    p "If it would ease your mind, how about we go and look for her? See how she is holding up?"
+    t "I would like that. Zhongli, would you join us please?"
+    z "Sure! When we find her, we can schedule the next training session."
+    t "That's great. I bet she is by the docks - looking at the boats entering and leaving, wishing she was on one of them."
+    p "It's getting late and after all that food, Paimon is getting sleepy. Let's quickly go and check on Atsuko then head to bed."
+    t "Okay, let's go."
+
+    scene bg dock1 with dissolve
+    pause 2
+    scene bg dock2 with dissolve
+    pause 2
+    scene bg dock3 with dissolve
+    show zh happy at center with dissolve
+    show paimon happy at right with dissolve
+
+    p "Hmm.. Strange. She is not around."
+    t "But she usually takes her evening walks by the docks."
+    p "Well, we can ask around if anyone has seen her?"
+    t "The merchant stalls are empty. The only person around is the boatman over there... what was his name again?"
+    z "In the back? That's Pinghai. Yes, he is the boatman. He manages smaller boats and can take you to the Pearl Gallery."
+    p "Pinghai, that's right. Paimon remembers using his services. He is a good boatman."
+    t "Let's go and ask him then."
+
+    scene bg boatman with dissolve
+    show paimon happy at left with dissolve
+    show zh happy at right with dissolve
+
+    ping "Good evening, Mr. Zhongli, friends. Will you be taking a trip to the Pearl Gallery this fine evening?"
+    z "Not tonight, Pinghai, but possibly soon. We were actually looking for somebody. Have you seen a lady by the name of Atsuko this evening?"
+    ping "Mmmm~ I did see her earlier today. She was here in the morning. She came back in the afternoon with a couple of sacks. Handed me a bag of Mora and demanded I give her a boat?"
+    t "Give her a boat?!"
+    ping "The bag was so full that she could practically buy a small raft. And that's exactly what she did. She seemed in a hurry."
+    t "Atsuko, what have you done..."
+    ping "She didn't say much. She was rambling about how she has to get away from here. I didn't ask any further questions since the bag of Mora did most of the talking."
+    p "You greedy boatman! How could you let that woman sail into the night just like that?"
+    ping "It's not the first time someone asks for a boat for a little getaway. Although the one thing that concerned me is that she left a letter for her {i}\"master\"{/i}."
+    z "Her master? What did she mean?"
+    ping "She said that she basically failed her master and she can't be trusted. She can't continue with the training."
+    t "Training... Zhongli! That letter is for you. You were her master."
+    ping "Is it true, Mr. Zhongli?"
+    z "Yes, I suppose I was helping her in a new endeavor. I wouldn't say I was her master but then again, perhaps that's the way she expressed herself. A bit of a cultural difference."
+    ping "Very well then. I was not sure what to do with the letter anyway. Here, you can have it."
+    z "Thank you, Pinghai."
+    ping "Glad I could help."
+    p "Zhongli, what does it say?"
+    z "Let me see..."
+
+    scene bg dock-letter with dissolve
+    pause 3
+    pause
+    scene bg boatman with dissolve
+    show paimon happy at left
+    show zh happy at right
+    z "Oh my... she is gone."
+    t "What do you mean \"gone\"?"
+    z "The boat she took - she is going back to Inazuma."
+    p "To Inazuma?! And she is bringing her {i}you-know-what{/i} with her? Straight to the Electro Archon."
+    t "She is going to do something crazy! We have to stop her! She will get hurt!"
+    z "I am aware of that. And so is she. But her wish is to not try and stop her. We need to honor her decision."
+    t "But..."
+    z "No. We tried our best to show her the way, but she refused to listen. It makes me sad, but we have to let her be."
+    p "Be safe, Atsuko. We will come and find you one day."
+    t "One day, when we get to Inazuma, we will find her once again. And when we do, I'm not taking no for an answer."
+
+    $ end_txt = "One day we will find her once again..."
+    call end_screen(end_txt)
+    jump the_end
 
 label inspired:
-    "INSPIRED"
+    "{i}*The Traveler shatters the Geo Mimic Boar*{/i}"
+    ats "Huh! What happened? Traveler? Are you alright?"
+    t "I'm fine, Atsuko. What happened to you?"
+    ats "I... I don't know. One moment I could see the boar clearly and the next it was all black."
+    z "I think you are pushing your limit, Miss Atsuko."
+    ats "What is all that rubble? Did I make this?"
+    p "No, it was the Traveler. Unfortunately your Geo Mimic got smashed to pieces."
+    ats "That's okay. I can always conjure a new one."
+    z "Perhaps it's better to rest now. You don't want to lose control and hurt someone by accident."
+    ats "You're right, Mr. Zhogli. I should take it one step at a time. But I'm afraid I might lose control again. How do I prevent that? I don't want to hurt anybody."
+    z "I know it can be hard to get a grasp of the powers that come with a Vision. Today you've shown a great deal of strength and courage. If you keep on training consistently, you will become a great Vision bearer."
+    ats "Do you really think so? All of you?"
+    t "Mhm..."
+    p "Yup~ Paimon has no doubt that you will master the power of Geo. Just keep practicing."
+    z "How does it feel to wield the power of Geo?"
+    ats "It's ... strange. And scary. But the more I use it, the easier it gets. At least that's how I'm feeling right now."
+    z "And it will keep on getting easier. Before you know it, you will be able to conjure multiple Geo Mimics and control them all."
+    ats "Wow! That sounds like a distant dream. If I can do that, imagine the possibilities."
+    p "You can make a Geo Mimic Zoo for people to visit."
+    ats "No, Paimon. I don't want to use these powers for entertainment purposes. I could actually make a difference."
+    z "You could! And you should!"
+    ats "Mr. Zhongli, you've been a great teacher to me. Would you be my master officially, please? Can you teach me the ways of Geo?"
+    z "Miss Atsuko, I'd be honored. As long as you are in Liyue, you can swing by the Wangshang Funeral Parlor for lessons anytime."
+    ats "Thank you! And one day, when I get strong enough, we will free the people of Inazuma from the Electro Archon's tyranny."
+    t "That's a big promise you're making. I hope we can be there to assist you. But until then, if you ever need us, we will be around."
+    p "Looks like another successful case against Paimon's name!"
+    t "Yeah, right. Paimon gets to take all the credit again."
+    p "What do you mean? Paimon's done most of the investimigation work and stuff. You two just waved your Geo powers to help Atsuko."
+    t "We wouldn't have done it without your guidance, Zhongli. Thanks for that."
+    z "You are very welcome. Now about that dinner you owe me?"
+    $ end_txt = "One day we will free the people of Inazuma..."
+    call end_screen(end_txt)
+    jump the_end_3
+
+label the_end:
+
+    image bg black = "#000"
+
+    scene bg black with Fade(0.5, 0, 0)
+    show text "{size=44} The End #2" at truecenter
+    with dissolve
+    pause 3
+    hide text
+    with dissolve

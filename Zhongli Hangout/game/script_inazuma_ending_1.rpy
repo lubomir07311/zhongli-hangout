@@ -346,5 +346,5 @@ label inazuma_ending_1:
 
     $ end_txt = "Baal always gets what she desires..."
     call end_screen(end_txt)
-    $ end_txt = "The End"
+    $ end_txt = "The End #1"
     call end_screen(end_txt)

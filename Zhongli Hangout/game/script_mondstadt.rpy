@@ -96,7 +96,7 @@ label mondstadt_square:
     p "Nothing, he is fine. Can't say the same for his restaurant though. Somebody trashed it and smashed his oven. He can't continue his business right now. We are here investigating."
     n "And you think I might have something to do with it? How could you..."
     z "Please calm down, Miss Noelle. Could you tell us a bit about your vision?"
-    n "My...vision...? What does {i}it{/t} have to do with it?"
+    n "My...vision...? What does {i}it{/i} have to do with it?"
     z "We suspect that whoever trashed the place used a Geo vision and the traveler mentioned you posses one."
     n "I do, but all I use it for is to protect myself and the people of Mondstadt. I use it primarily to shield us from incoming attacks. When it comes to offence, all I do is imbue my greatsword with the power of Geo."
     z "So no conjuring powers of any sort?"
@@ -187,7 +187,7 @@ label mondstadt_square:
 label choices_mondstadt_night:
 
     menu:
-        z "{cps=0}We can always just get some food on the go. But we have to decide now. A night in Mondstadt or hitting the road on a transport balloon? What do you think, Traveler?"
+        z "{cps=0}We can always just get some food on the go. But we have to decide now. A night in Mondstadt or hitting the road on a transport balloon? What do you think, Traveler?{/cps}"
 
         "Stay in Mondstadt":
             t "As much as I want to get this done, I think that staying one night in Mondstadt will do us good. We can continue the investigation tomorrow when we are well rested."
@@ -223,7 +223,7 @@ label choices_mondstadt_night:
 
 label choices_mondstadt_drinks:
     menu:
-        p "{cps=0}Well if both sound good, which one should we go to?"
+        p "{cps=0}Well if both sound good, which one should we go to?{/cps}"
 
         "Cat's Tail":
             t "Let's pay Diona a visit at the Cat's Tail. She can make us some non-alcoholic drink that will surely satisfy our taste buds."

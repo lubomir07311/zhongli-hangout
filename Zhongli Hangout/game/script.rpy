@@ -8,6 +8,8 @@ define y = Character("Ying'er", color="#FFD700", who_outlines=[(2, "#000", 0, 0)
 define a = Character("Ayaka", color="#FFD700", who_outlines=[(2, "#000", 0, 0)])
 define g = Character("Millileth Guard", color="#FFD700", who_outlines=[(2, "#000", 0, 0)])
 define ats = Character("Atsuko", color="#FFD700", who_outlines=[(2, "#000", 0, 0)])
+define ping = Character("Pinghai", color="#FFD700", who_outlines=[(2, "#000", 0, 0)])
+
 
 define flashbulb = Fade(0.2, 0.0, 0.8, color ='dfd')
 
@@ -40,7 +42,7 @@ label start:
 label choices:
 
     menu:
-        p "{cps=0}I suggest we go downstairs and grab something to eat. "
+        p "{cps=0}I suggest we go downstairs and grab something to eat.{/cps}"
 
         "Go Downstairs for Breakfast":
             jump choices_in
@@ -88,7 +90,7 @@ label downstairs:
     x "We could also offer you Jueyun Guoba, Noodles with Mountain Delicacies or Stir-Fried Filet. What will it be?"
 
     menu:
-        x "{cps=0}We could also offer you Jueyun Guoba, Noodles with Mountain Delicacies or Stir-Fried Filet. What will it be?"
+        x "{cps=0}We could also offer you Jueyun Guoba, Noodles with Mountain Delicacies or Stir-Fried Filet. What will it be?{/cps}"
 
         "Jueyun Guoba":
             $ food = "Jueyun Guoba"
@@ -125,7 +127,7 @@ label downstairs:
     show xiuhua happy behind paimon:
         xalign 0.0 yalign 0.0
         linear 1.5 xalign 1.0
-    "{cps=0}Xiuhua brings the food to the table"
+    "{cps=0}{i}*Xiuhua brings the food to the table*{/i}{/cps}"
 
     x "One [food] for you and two Fullmoon Eggs with a glass of water for you. Enjoy your meal!"
     p "Thank you, Xiuhua!"
@@ -173,7 +175,7 @@ label wanmin_scene_one:
     p "This doesn't sound right. There must be a logical explanation to why someone would trash the Wanmin Restaurant...but what?"
     m "I was going to put up a commission with the Adventurers' Guild across the street to further investigate this issue but since you are here, would you like to take on the job?"
     menu:
-        m "{cps=0}I was going to put up a commission with the Adventurers' Guild across the street to further investigate this issue but since you are here, would you like to take on the job?"
+        m "{cps=0}I was going to put up a commission with the Adventurers' Guild across the street to further investigate this issue but since you are here, would you like to take on the job?{/cps}"
 
         "We would be happy to!":
             t "Well we haven't been assigned anything from the guild today. I think we can take on this case. What do you think Paimon?"
