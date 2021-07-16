@@ -7,6 +7,7 @@ define l = Character("Lan", color="#FFD700", who_outlines=[(2, "#000", 0, 0)])
 define y = Character("Ying'er", color="#FFD700", who_outlines=[(2, "#000", 0, 0)])
 define a = Character("Ayaka", color="#FFD700", who_outlines=[(2, "#000", 0, 0)])
 define g = Character("Millileth Guard", color="#FFD700", who_outlines=[(2, "#000", 0, 0)])
+define ats = Character("Atsuko", color="#FFD700", who_outlines=[(2, "#000", 0, 0)])
 
 define flashbulb = Fade(0.2, 0.0, 0.8, color ='dfd')
 
