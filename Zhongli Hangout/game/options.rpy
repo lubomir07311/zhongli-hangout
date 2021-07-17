@@ -29,7 +29,17 @@ define config.version = "1.0"
 ## Text that is placed on the game's about screen. Place the text between the
 ## triple-quotes, and leave a blank line between paragraphs.
 
-define gui.about = _p("""
+define gui.about = _p("""This is a fanmade Zhongli Hangout game. All assets belong to miHoYo Co., Ltd.
+
+The game was made by Love and Peace Toons. You can support the creator on YouTube or follow me on the social media links below:
+
+    https://www.youtube.com/LoveandPeaceToons/
+
+    https://twitter.com/LoveNPeaceToons/
+
+    https://www.instagram.com/lovenpeacetoons/
+
+    Discord channel: https://discord.gg/yfuEgek
 """)
 
 
