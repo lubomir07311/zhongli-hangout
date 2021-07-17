@@ -1,6 +1,6 @@
 define t = Character("Traveler", color="#FFD700", who_outlines=[(2, "#000", 0, 0)])
 define p = Character("Paimon", color="#AFEEEE", who_outlines=[(2, "#000", 0, 0)])
-define x = Character("Xiuhua", color="#FFFFFF", who_outlines=[(2, "#000", 0, 0)])
+define x = Character("Xiuhua", color="#FFD700", who_outlines=[(2, "#000", 0, 0)])
 define u = Character("???", color="#FFFFFF", who_outlines=[(2, "#000", 0, 0)])
 define m = Character("Chef Mao", color="#FFD700", who_outlines=[(2, "#000", 0, 0)])
 define l = Character("Lan", color="#FFD700", who_outlines=[(2, "#000", 0, 0)])
@@ -28,9 +28,9 @@ label start:
     show paimon happy with dissolve
 
     p "It better be. Paimon barely got any sleep last night with all the thunder and lightning."
-    t "It was pretty scary, wasn't it. {p}I haven't seen a storm like that in a while. Especially over Liyue."
-    t "I'm glad we could find a room at the Baiju Guesthouse for the night. {p}I don't want to think what could have happened to us if we camped out in the open."
-    p "Paimon doesn't like being wet. {p}Remember the time when you fished Paimon up from that lake?"
+    t "It was pretty scary, wasn't it? I haven't seen a storm like that in a while. Especially over Liyue."
+    t "I'm glad we could find a room at the Baiju Guesthouse for the night. I don't want to think what could have happened to us if we camped out in the open."
+    p "Paimon doesn't like being wet. Remember the time when you fished Paimon up from that lake?"
     p "Paimon was so grateful to be on dry land again that Paimon vowed to be your guide in the world of Teyvat. And look at us now."
     t "If I recall correctly, Paimon also stole some of my food at the time."
     p "Hey, it wasn't stealing. You offered and Paimon accepted politely. Besides, you are a far better chef than Paimon."
@@ -52,7 +52,7 @@ label choices:
 
 label choices_in:
     t "I heard that the kitchen at the Baiju Guesthouse serves the best Fullmoon Egg in Liyue."
-    p "Mmmm.. Fullmoon Egg. Fresh fish, mixed with the finest shrimp, diced and minced to perfection. Stuffed in an eggy dough and steamed over medium heat. "
+    p "Mmmm... Fullmoon Egg. Fresh fish, mixed with the finest shrimp, diced and minced to perfection. Stuffed in an eggy dough and steamed over medium heat. "
     t " Um, Paimon, you're drooling."
     "{i}*Paimon wipes her drool off*{/i}"
     p "Okay then, let's get going."
@@ -63,7 +63,7 @@ label choices_in:
 
 label choices_out:
     t "Would you like to go out for food, instead of eating downstairs?"
-    p "This sounds lovely. Paimon has almost forgotten the taste of Wanmin Restaurant's Boiled Fish. Can we go to Wanmin Restaurant, Traveler? Please please please?"
+    p "This sounds lovely. Paimon has almost forgotten the taste of the Wanmin Restaurant's Boiled Fish. Can we go to the Wanmin Restaurant, Traveler? Please please please?"
     t "Well the Wanmin Restaurant is on the way to the Adventurers' Guild. Which is where we should head after breakfast anyway."
     t "I guess we are taking down two birds with one stone. But I think that the Boiled Fish might be a bit too heavy for breakfast. I might stick to some good old Mora Meat. "
     p "Nothing is too heavy when Paimon is having it. Hecc, Paimon might get a side of Mora Meat to go with that Boiled Fish as well haha."
@@ -171,17 +171,17 @@ label wanmin_scene_one:
     t "Well, Brook, the chef from Springvale was a bit upset over the loss of the cook-off but ultimately she was happy to exchange recipes and cooking tips with Xiangling. "
     t "Even to this day, there is this girl in Springvale, Siegfria, who would put up commissions with the Adventurers' Guild for Jade Parcels. Everyone seemed happy with Xiangling's visit to Mondstadt."
     p "Mmm... Delicious Jade Parcels..."
-    m "Then I don't know. I've told the millelith the same thing. I haven't heard complaints on the premises of the restaurant. We are an honest business with no outstanding debt or taxes due."
+    m "Then I don't know. I've told the Millelith the same thing. I haven't heard complaints on the premises of the restaurant. We are an honest business with no outstanding debt or taxes due."
     p "This doesn't sound right. There must be a logical explanation to why someone would trash the Wanmin Restaurant...but what?"
     m "I was going to put up a commission with the Adventurers' Guild across the street to further investigate this issue but since you are here, would you like to take on the job?"
     menu:
         m "{cps=0}I was going to put up a commission with the Adventurers' Guild across the street to further investigate this issue but since you are here, would you like to take on the job?{/cps}"
 
         "We would be happy to!":
-            t "Well we haven't been assigned anything from the guild today. I think we can take on this case. What do you think Paimon?"
+            t "Well we haven't been assigned anything from the guild today. I think we can take on this case. What do you think, Paimon?"
 
         "You can count on us!":
-            t "Well we haven't been assigned anything from the guild today. I think we can take on this case. What do you think Paimon?"
+            t "Well we haven't been assigned anything from the guild today. I think we can take on this case. What do you think, Paimon?"
 
     p "Yup! You can count on us. Anything to get your signature Boiled Fish back on the Liyue menu."
     m "Thank you so much! I would compensate you greatly for you trouble. And you can come by for a free meal after we are back in business."
@@ -189,9 +189,9 @@ label wanmin_scene_one:
     t "Okay, but where do we start? "
     p "The crime scene... duuh... We need to inspect those rocks."
     t "Good thinking, Paimon. But I'm not much of a rock expert. Are you?"
-    p "Well, not really. But do you have any better idea where to start?"
+    p "Well, not really. But do you have any better ideas where to start?"
     t "*sigh* I guess not. Come on, let's have a closer look at the rocks."
-    m "Sure, follow me. And excuse the mess. I've been too busy talking to the millelith and disappointing customers to clean up."
+    m "Sure, follow me. And excuse the mess. I've been too busy talking to the Millelith and turning customers away to clean up."
     p "Don't worry about it. We are just going to have a look at the rocks."
     scene bg wanmin trashed with dissolve
     show paimon happy at left with dissolve
@@ -206,7 +206,7 @@ label wanmin_scene_one:
     p "Hey, this one kinda looks like a broken crab hehe...."
     t "Paimon! Will you focus here. It's not a good time to joke around. We took on this commission to help Chef Mao get back in business and catch the criminals responsible."
     p "Sorry, you're right. This is a serious job. "
-    p "So you are saying that this might be the work of not your ordinary everyday criminal but someone more powerful."
+    p "So you are saying that this might be the work of a not-your-ordinary-everyday criminal, but someone more powerful."
     t "I suspect so. And this does narrow down the list of suspects quite a lot. "
     p "Are we going to go and interrogate each one individually?"
     t "Don't be silly. That would take up too much of our time. I suggest we visit an expert first. He will be able to point us in the right direction."

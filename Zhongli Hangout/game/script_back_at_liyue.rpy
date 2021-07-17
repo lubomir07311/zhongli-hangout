@@ -1,7 +1,7 @@
 label in_front_of_guesthouse:
-    scene bg guesthouse_night
-    show paimon happy at right
-    show zh happy at left
+    scene bg guesthouse_night with dissolve
+    show paimon happy at right with dissolve
+    show zh happy at left with dissolve
     t "Look at how dark the sky is... I didn't think we would make it in time!"
     z "And the wind has picked up significantly. It is going to be a heavy storm indeed. Are you going to be staying at the Baiju Guesthouse again?"
     t "Yes, I think it would be best. We can get a good night's sleep and pick up where we left off tomorrow morning."
@@ -35,12 +35,12 @@ label day_after_liyue:
         p "Zhongli, do you think we should ask the Millelith?"
         z "The Millelith might not be the best affiliation to ask. They have stricter protocols and might not be willing to give any information to us."
         p "Is there another central hub for information then?"
-        t "How about the Adventurers' Guild?. All adventurers are required to check in with the Adventurers' Guild. Which means the coordinator will have a lot of information about events going around Liyue."
+        t "How about the Adventurers' Guild? All adventurers are required to check in with the Adventurers' Guild. Which means the coordinator will have a lot of information about events going around Liyue."
         z "You are absolutely right, Traveler!"
         p "And as members of the Adventurers' Guild, we can access that information. Especially if we are trying to eliminate a threat!"
-        t "That's right! I see Lan, the branch master is around. We can go talk to her."
+        t "That's right! I see Lan, the branch master, is around. We can go talk to her."
         z "Sounds good! Lead the way!"
-        scene bg lan
+        scene bg lan with dissolve
         show paimon happy at center with dissolve
         show zh happy at right with dissolve
         p "Hey, Lan!"
@@ -89,7 +89,7 @@ label day_after_liyue:
         t "Come on, cut him some slack. The trip to Mondstadt must have brought back memories."
         p "Okay, okay~ but Paimon is eager to pick up the investigation. We are at a dead end... What's our next move?"
         t "We'll decide together, once Zhongli arrives. Until then, just try to enjoy the sun while it's out."
-        p "I guess you've got a point. With so many storms recently, Paimon should be happy to floating in the sun."
+        p "I guess you've got a point. With so many storms recently, Paimon should be happy to be floating in the sun."
         t "Hehe~ that's right. But don't get too comfortable. I see someone in the distance coming our way."
         p "Wait, who is it? Paimon can't see that far!"
         show paimon happy at center with move
@@ -101,7 +101,7 @@ label day_after_liyue:
         z "Ah, I see. Well, I'm here now. We can get back on it. Do you have any new information?"
         t "No, we haven't asked around yet. We were waiting for you since we are partners in this!"
         z "Oh, I'm flattered. But I'm just a consultant here. You are the lead investigators on this case."
-        p "We might be, but Paimons list is pretty dry at this point. We need to find some new suspects!"
+        p "We might be, but Paimon's list is pretty dry at this point. We need to find some new suspects!"
         t "Well, I can see Lan over there by the Adventurers' Guild. She is a very resourceful individual. How about asking her if there has been any progress within Liyue?"
         z "Excellent idea, Traveler. All adventurers report to the Adventurers' Guild daily. So if anyone has seen anything unusual, Lan would know!"
         p "Paimon's list is ready to be filled once again! Let's go talk to Lan!"
@@ -147,7 +147,7 @@ label day_after_liyue:
         jump outside_shop
 
 label outside_shop:
-    scene bg yinger
+    scene bg yinger with fade
     show paimon happy at center with dissolve
     show zh happy at left with dissolve
 
@@ -174,7 +174,7 @@ label outside_shop:
     t "No, no. Walking by here I always get a good tingling sensation in my nose. Paimon wants to know if there is perhaps somebody who would benefit from trashing your business?"
     y "I can't think of anybody off the top of my head. Everybody in Liyue loves their fragrances. I have a lot of repeat customers as well!"
     t "Seems a bit odd for somebody to attack a restaurant and a perfume shop. Assuming it was the same person or people both times. You are two very different lines of business."
-    y "Well it is highly likely it was the same people, because I heard that some large rocks smashed the Wanmin Restaurant's oven the same way they smashed my shelves of glass bottles."
+    y "It's highly likely that it was the same people, because I heard that some large rocks smashed the Wanmin Restaurant's oven the same way they smashed my shelves of glass bottles."
     t "Yes, yes. It seems like the method of execution was the same."
     p "And Paimon thinks that there aren't that many people nearby capable of committing such a crime. We will catch them, don't you worry! It would have been convenient if someone disliked you though."
     t "Paimon! That's not a nice thing to say! You should apologize to Ying'er right now!"
@@ -184,7 +184,7 @@ label outside_shop:
     z "Traveler, Paimon, I got us in. The Millelith have agreed for us to go inside the shop and have a look at the rocks."
     y "What about me? I need to start cleaning up as soon as possible."
     z "I've spoken to the Millelith about that as well. They said that the earliest you can access your shop would be tomorrow."
-    y "Unbelievable! I've gotten nothing from then and you walk over and tell me I can have my shop back tomorrow?"
+    y "Unbelievable! I've gotten nothing from them but you walk over there, say a few words, and tell me I can have my shop back tomorrow?"
     z "What can I say - I'm a person of many talents and persuasion is one of them."
     y "Thank you for your help. I'll be on my way now if there's nothing else I can help you with."
     p "It seems like you don't have enemies around here or people that would benefit from interrupting your business, but if you think of anyone, please, let us know."
@@ -218,7 +218,7 @@ label outside_shop:
     t "Are those crab claws?"
     p "Mhm~ And there's a squirrel's tail if Paimon's not mistaken."
     t "So back at the Wanmin Restaurant, you weren't being silly, Paimon. There were actual clues and I just dismissed them quickly."
-    p "You should trust Paimon more! Paimons has eagle eyes! They see all!"
+    p "You should trust Paimon more! Paimon has eagle eyes! They see everything!"
     z "So what do we have here? Boars, squirrels, crabs..."
     p "That looks like a crane's beak broken in half."
     z "...crane..."
@@ -229,7 +229,7 @@ label outside_shop:
     z "Basically, they are the next evolutionary step from the electro slimes. They have minor innate electro abilities but can be a serious threat if not handled properly."
     p "But if handled properly, they can make a very tasty snack!"
     t "That's the first I'm hearing of them. How come the Liyue cuisine does not cook them then?"
-    z "See electric eels are exclusive to the region of Inazuma. Liyue just never imported them or adopted them in the local cuisine."
+    z "Electric eels are exclusive to the region of Inazuma. Liyue just never imported them or adopted them in the local cuisine."
     t "But if they are exclusive to Inazuma, what are they doing in Ying'er's perfume shop? Petrified?"
     p "We already know that these rocks were conjured. Do you think somebody actually let wild animals run loose in the shop and once they were done trashing the place - petrified them?"
     z "Highly unlikely. It looks like the animals are Geo constructs themselves."
@@ -244,14 +244,14 @@ label outside_shop:
     t "So for someone to conjure an eel, they must have seen an eel. That means they must have been to Inazuma!"
     z "That's some impressive detective skills, Traveler."
     t "I would not have done it without you! Now we can narrow down the list of suspects quite a lot."
-    z "There's just one problem. As we know, Inazuma is a closed nation. No one has been there for a while and there are no Inazumans in Liyue as far as I'm aware. Do you know of anybody from Inazuma in Liyue?"
+    z "There's just one problem. As we know, Inazuma is a closed nation. No one has been there for a while and there aren't any people from Inazuma in Liyue as far as I'm aware. Do you know of anybody from Inazuma in Liyue?"
     jump choices_liyue
 
 label choices_liyue:
 
     $ globals()['menu_yalign'] = 0.6
     menu:
-        z "{cps=0}There's just one problem. As we know, Inazuma is a closed nation. No one has been there for a while and there are no Inazumans in Liyue as far as I'm aware. Do you know of anybody from Inazuma in Liyue?{/cps}"
+        z "{cps=0}There's just one problem. As we know, Inazuma is a closed nation. No one has been there for a while and there aren't any people from Inazuma in Liyue as far as I'm aware. Do you know of anybody from Inazuma in Liyue?{/cps}"
 
         "Bibo":
             p "The fishmonger? No - he is local, although he did say he once rescued a woman from Inazuma and that was the last time someone left Inazuma illegally."
@@ -259,9 +259,9 @@ label choices_liyue:
         "Ivanovich":
             p "No, you silly goose, Ivanovich is a traveling merchant from Snezhnaya. He gave us that Shivada Jade Fragment, remember?"
         "Changshun":
-            z "No, she is has pure Liyue blood running through her veins. Woman thinks she can get rich by selling potatoes, cheese and sugar. Good luck to her!"
+            z "No, Changshun has pure Liyue blood running through her veins. Woman thinks she can get rich by selling potatoes, cheese and sugar. Good luck to her!"
         "Xingxi":
-            z "The Mingxing Jewelry owner? It is a family business that has been in Liyue for hundreds of years. Some even call it the Rex Lapis of the market for precious stones. She can't be Inazuman."
+            z "The Mingxing Jewelry owner? It is a family business that has been in Liyue for hundreds of years. Some even call it the Rex Lapis of the market for precious stones. She can't be from Inazuma."
         "Linlang":
             z "The Xigu Antiques owner? She is one of the biggest Liyue patriots there are. She studied ancient Liyue history. She and Soraya share a passion for the antiques."
             p "The only odd thing about her is that glowing piece of rock she gave us. She said it came from a star but the ore suppliers tell crazy stories just to sell their stock these days."
@@ -278,9 +278,9 @@ label choices_liyue_no_bibo:
         p "{cps=0}The fishmonger? No - he is local, although he did say he once rescued a woman from Inazuma and that was the last time someone left Inazuma illegally.{/cps}"
 
         "Changshun":
-            z "No, she is has pure Liyue blood running through her veins. Woman thinks she can get rich by selling potatoes, cheese and sugar. Good luck to her!"
+            z "No, Changshun has pure Liyue blood running through her veins. Woman thinks she can get rich by selling potatoes, cheese and sugar. Good luck to her!"
         "Xingxi":
-            z "The Mingxing Jewelry owner? It is a family business that has been in Liyue for hundreds of years. Some even call it the Rex Lapis of the market for precious stones. She can't be Inazuman."
+            z "The Mingxing Jewelry owner? It is a family business that has been in Liyue for hundreds of years. Some even call it the Rex Lapis of the market for precious stones. She can't be from Inazuma."
         "Linlang":
             z "The Xigu Antiques owner? She is one of the biggest Liyue patriots there are. She studied ancient Liyue history. She and Soraya share a passion for the antiques."
             p "The only odd thing about her is that glowing piece of rock she gave us. She said it came from a star but the ore suppliers tell crazy stories just to sell their stock these days."

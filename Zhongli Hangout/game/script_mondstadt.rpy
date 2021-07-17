@@ -6,10 +6,10 @@ label mondstadt_square:
     play music "audio/bg_mondstadt.wav" fadein 2.0
     scene bg ms_sq with fade
     pause 3
-    show zh happy at left
-    show paimon happy at center
+    show zh happy at left with dissolve
+    show paimon happy at center with dissolve
 
-    z "Ah..the city of Freedom! It's been a while since I've been here."
+    z "Ah... the city of Freedom! It's been a while since I last visited."
     p "We've been traveling back and forth between here and Liyue quite a lot recently. Has Mondstadt changed a lot since your last visit, Zhongli?"
     z "You could say that. But at heart, it is still the same. The people are walking the streets freely. Not that many guards in sight and everybody seems to be smiling."
     p "Speaking of guards, should we find one and ask them where to find...?"
@@ -87,42 +87,42 @@ label mondstadt_square:
     n "Rocks? I don't understand?!"
     t "Noelle, do you remember the trip we took to Liyue recently?"
     n "Yes, I do. How can I forget? I remember all the places you took me to."
-    t "So you remember the Wanmin Restaurant and chef Mao?"
+    t "So you remember the Wanmin Restaurant and Chef Mao?"
     n "The time I burned my tongue on authentic Liyue spicy food..heh.. One does not simply forget such an experience."
-    t "See that's the thing... we hope you had forgotten about the unpleasant experience and hold no grudge with chef Mao."
+    t "See that's the thing... we hope you had forgotten about the unpleasant experience and hold no grudge with Chef Mao."
     n "Unpleasant? Grudge? What are you saying? I had a good time. It made me stronger and more adventurous! I would never hold a grudge with someone who made me a better person!"
     p "You say that, but we have to be certain. Sorry for asking you these uncomfortable questions, but we have to be sure."
-    n "Sure? Sure of what? What's happened to chef Mao?"
+    n "Sure? Sure of what? What's happened to Chef Mao?"
     p "Nothing, he is fine. Can't say the same for his restaurant though. Somebody trashed it and smashed his oven. He can't continue his business right now. We are here investigating."
     n "And you think I might have something to do with it? How could you..."
-    z "Please calm down, Miss Noelle. Could you tell us a bit about your vision?"
-    n "My...vision...? What does {i}it{/i} have to do with it?"
-    z "We suspect that whoever trashed the place used a Geo vision and the traveler mentioned you posses one."
+    z "Please calm down, Miss Noelle. Could you tell us a bit about your Vision?"
+    n "My... Vision...? What does {i}it{/i} have to do with it?"
+    z "We suspect that whoever trashed the place used a Geo Vision and the Traveler mentioned you posses one."
     n "I do, but all I use it for is to protect myself and the people of Mondstadt. I use it primarily to shield us from incoming attacks. When it comes to offense, all I do is imbue my greatsword with the power of Geo."
     z "So no conjuring powers of any sort?"
     n "I wouldn't use it to conjure anything. I have everything I need already."
     t "It's not about what you have, it's about what you could have or do with it."
-    n "I..I...I would never hurt anybody with my vision. It is a gift from the Archons and I would only ever use it for good!"
-    t "Please, you have to understand that we never doubted you in the first place. There are only so many Geo vision bearers that we are visiting everyone we know. Nothing personal."
+    n "I.. I...I would never hurt anybody with my Vision. It is a gift from the Archons and I would only ever use it for good!"
+    t "Please, you have to understand that we never doubted you in the first place. There are only so many Geo Vision bearers that we are visiting everyone we know. Nothing personal."
     n "I understand but it still hurt my feeling to know that you thought of me as a criminal. I thought we had a better relationship, Honorary Knight."
     t "Noelle...we do! I promised to help you prepare for your knightly exam and I will be there the day you get your title! You can count on me!"
     n "Okay. It's reassuring to hear that after being accused of a violent crime. By the way, when did it even happen? It's been some time since our trip to Liyue."
     t "It happened a few days ago."
     n "Then you can definitely be sure it wasn't me. I was in Dragonspine with Mr. Albedo, Sucrose and Timaeus. I was helping to tidy Mr. Albedo's camp."
     p "Albedo is back in Dragonspine again?"
-    n "Yes he is. He found a new scene with 7 unique pine trees to paint. He and Sucrose have been staying there for the past week. Timaeus and I came back to Mondstadt yesterday. He will restock some alchemy and food supplies and go back to them."
+    n "Yes he is. He found a new scene with 7 unique pine trees to paint. Him and Sucrose have been staying there for the past week. Timaeus and I came back to Mondstadt yesterday. He will restock some alchemy and food supplies and go back to them."
     t "So Albedo has been in Dragonspine for the past week as well?"
-    n "Mhm~ his art has improved dramatically. Two should catch up once he returns."
+    n "Mhm~ his art has improved dramatically. You two should catch up once he returns."
     z "Who are this party of people if I may ask?"
     n "Mr. Albedo is the chief alchemist of the Knights of Favonious, Sucrose is his assistant and Timaeus is a scholar of alchemy."
-    p "Yes, that's right. And Albedo is also a Geo vision bearer. Paimon needs to scratch another name of the list."
+    p "Yes, that's right. And Albedo is also a Geo Vision bearer. Paimon needs to scratch another name of the list."
     n "The List?"
     p "Ehe...just people we need to talk to for the investigation."
     n "Oh...I see. Well you can find his camp near the Starglow Cavern in southern Dragonspine."
-    t "I don't think this will be necessary. Do you know if Timaeus is still around? I would just like to confirm your words with him real quick."
+    t "I don't think this will be necessary. Do you know if Timaeus is still around? I would just like to confirm your words with him real quickly."
     n "He should still be around. Try checking either by the alchemy table or near Good Hunter."
     p "That's right! Food and alchemy supplies. Good thinking, Noelle!"
-    t "I'm sorry if we've upset you today, Noelle. It's just that chef Mao has trusted us with this, and we want to be thorough with our investigation."
+    t "I'm sorry if we've upset you today, Noelle. It's just that Chef Mao has trusted us with this, and we want to be thorough with our investigation."
     n "I will be okay, don't worry about me. Just remember your promise."
     t "I wouldn't miss it for the world! Your knightly exam is important for me too. Make sure you are taking breaks from studying though!"
     n "I am! I remember our lessons from last time."
@@ -148,15 +148,15 @@ label mondstadt_square:
     t "No, I was just passing by and thought I'd say hi."
     tim "Oh that's strange of you. You usually just come around, do your business with the alchemy table and go away. Sometimes I feel like the only time you say 'hi' to me is by accident."
     t "Nonsense, Timaeus. I think highly of your alchemical research and experience. It's just that sometimes I'm in a hurry and can't stay to chat, although I would love to. But I have some time just now. Where are you off to?"
-    tim "Well I'm packing some supplies for Albedo and Sucrose. They are in Dragonspine and the expedition is taking longer than anticipated. I came back today to restock and will be back on the road."
+    tim "I'm packing some supplies for Albedo and Sucrose. They are in Dragonspine and the expedition is taking longer than expected. I came back today to restock and will be back on the road."
     t "You came back today? Alone?"
     tim "As a matter of fact, no. I traveled with Noelle. She was there to tidy the camp."
-    t "Ah... and how long was the expedition supposed to be originally."
+    t "Ah... and how long was the expedition supposed to be originally?"
     tim "Just a week, but it looks like it will be closer to two. Maybe a couple of days extra on top. Why the sudden interest in our expeditions? It's been a while since we've seen you in Dragonspine."
     t "Oh...  you know, just trying to make a conversation, but I can see that you are busy packing, so I'll let you be. Wish all the best to Albedo and Sucrose from me when you see them again. We will catch up once your expedition is over!"
     tim "Sure, will do. In the meantime, feel free to use the alchemy table as usual."
     t "Thanks, Timaeus! Safe trip!"
-    tim "Goodbye, Traveler!"
+    tim "Goodbye, Honorary Knight!"
 
     scene bg ms_sq_3 with fade
     show zh happy at left
@@ -164,7 +164,7 @@ label mondstadt_square:
 
     p "So... what did Timaeus say?"
     t "Exactly what Noelle said. The group has been in Dragonspine the past week. Noelle was there to tidy the camp because the group will be staying longer. And the two of them came back today."
-    p "That means there is no way Noelle of Albedo were in Liyue a few days ago."
+    p "That means there is no way Noelle or Albedo were in Liyue a few days ago."
     z "That would seem correct. Seems like these two have a solid alibi. Do you trust them enough to take their word for it?"
     t "I do. I took a peak at Timaeus' bags while he was packing, and they were full of alchemy supplies. I think I caught a glimpse of some containers of paint and some food boxes as well."
     p "And Noelle was just calmly studying for her knightly exam before we disturbed her."
@@ -173,7 +173,7 @@ label mondstadt_square:
     z "Does that mean that we have reached a dead end?"
     t "Unfortunately, it seems so..."
     p "Oof.. Paimon hates being stuck on a puzzle! Wish we could just look up the answer and be done with it. But there isn't even anybody to give us hints."
-    t "You're right. But it's a good thing we crossed our friend off of the list of suspects. That means we are dealing with a new and unknown enemy."
+    t "You're right. But it's a good thing we crossed our friends off of the list of suspects. That means we are dealing with a new and unknown enemy."
     p "Zhongli, do you think the abyss could have snuck into Liyue undetected and wrecked the Wanmin restaurant?"
     z "Next to impossible. Ever since the Rite of Parting, the Millelith have been on the lookout with stricter schedules and more frequent patrols. It suprises me that the act of vandalism happened unnoticed in the first place."
     t "It is rather strange."
@@ -199,22 +199,22 @@ label choices_mondstadt_night:
             p "Our friend, Diona, makes the best cocktails in the Cat's Tail. No matter what she adds, her mixing process is so unique that it can't produce a bad concoction."
             z "This sounds intriguing."
             p "Plus, the tavern is full of cats you can play with while drinking your cocktail."
-            z "I do enjoy the company of a feline friend while enjoying a refreshing drink. What is the alternative though?"
+            z "I do enjoy the company of a feline friend while sipping on a refreshing drink. What is the alternative though?"
             p "Well there's always the Angel's Share. The classic Mondstadt tavern with the locally sourced dandelions wine from the Dawn Winery. It is just what you came here for."
             z "Although I came for the dandelions wine, I wouldn't mind experiencing the new buzz in town with your friend's cocktails."
-            p "Well if both sound good, which one should we go to?"
+            p "Well if both sound good, which one should we go to, Traveler?"
             jump choices_mondstadt_drinks
 
         "Rent a transport balloon":
             $ stayed_in_mondstadt = False
             t "It is best to resolve the issue as fast as possible. Besides, if we spend too much time out of Liyue, we are giving the criminal more time to get away."
             z "I haven't thought about it that way. Since we cleared all Mondstadt folk, the criminal must be in Liyue. And we have already wasted so much time with our trip."
-            t "I wouldn't call it wasted but I agree. We should spend as much time as possible close to the person responsible. Let's hope they are not long gone by now."
+            t "I wouldn't call it wasted, but I have to agree here. We should spend as much time as possible close to the person responsible. Let's hope they are not long gone by now."
             p "Let's find a transport balloon to rent quickly. Paimon doesn't want to travel in the storm."
             t "The clouds are coming from behind the town square. That means that the storm will hit Mondstadt first. If it moves slowly, we should be able to outrun it and make it to Liyue dry."
             z "You've got a good eye for meteorology."
             t "I've picked up a few things during my travels."
-            p "Enough chit-chat, people, the more time we spend here, the higher chance of getting wet."
+            p "Enough chit-chat, people, the more time we spend here, the higher the chances of getting wet."
             t "Paimon's right. Let's find a balloon and get out of here as soon as possible."
             $ end_txt = "The party rents a transport balloon and makes it back to Liyue before the storm"
 
@@ -223,7 +223,7 @@ label choices_mondstadt_night:
 
 label choices_mondstadt_drinks:
     menu:
-        p "{cps=0}Well if both sound good, which one should we go to?{/cps}"
+        p "{cps=0}Well if both sound good, which one should we go to, Traveler?{/cps}"
 
         "Cat's Tail":
             t "Let's pay Diona a visit at the Cat's Tail. She can make us some non-alcoholic drink that will surely satisfy our taste buds."
